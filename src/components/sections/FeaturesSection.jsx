@@ -19,7 +19,7 @@ export default function FeaturesSection() {
                 opacity: 0,
                 transform: 'translateY(20px)',
                 pointerEvents: 'none',
-                background: 'linear-gradient(to bottom, #2b3618 0%, #667440 40%, #707F48 75%, #8E956C 100%)',
+                background: 'linear-gradient(to bottom, #0a0a0a 0%, #111111 40%, #1a1a1a 75%, #222222 100%)',
             }}
         >
             {/* BG image overlay matching the main page */}

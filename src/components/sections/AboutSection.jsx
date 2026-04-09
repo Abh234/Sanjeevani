@@ -32,7 +32,7 @@ export default function AboutSection() {
         <section
             style={{
                 minHeight: "100vh",
-                background: "linear-gradient(160deg, #1a2a0a 0%, #2d3d1a 50%, #3a5020 100%)",
+                background: "linear-gradient(160deg, #0a0a0a 0%, #111111 50%, #1a1a1a 100%)",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",

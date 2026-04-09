@@ -110,7 +110,7 @@ export default function DemoModal({ isOpen, onClose }) {
                 style={{
                     maxWidth: "700px",
                     maxHeight: "calc(100vh - 20px)",
-                    background: "linear-gradient(160deg, rgba(43, 54, 24, 0.95) 0%, rgba(13, 20, 8, 0.98) 100%)",
+                    background: "linear-gradient(160deg, rgba(10, 10, 10, 0.95) 0%, rgba(0, 0, 0, 0.98) 100%)",
                     borderRadius: "24px",
                     border: "1px solid rgba(183, 194, 94, 0.25)",
                     boxShadow: "0 40px 100px rgba(0, 0, 0, 0.6), 0 0 60px rgba(183, 194, 94, 0.08), inset 0 1px 0 rgba(255,255,255,0.05)",
@@ -357,7 +357,7 @@ export default function DemoModal({ isOpen, onClose }) {
                         alignItems: "center",
                         justifyContent: "center",
                         padding: "32px",
-                        background: "linear-gradient(160deg, rgba(43, 54, 24, 0.98) 0%, rgba(13, 20, 8, 0.99) 100%)"
+                        background: "linear-gradient(160deg, rgba(10, 10, 10, 0.98) 0%, rgba(0, 0, 0, 0.99) 100%)"
                     }}>
                         <div style={{
                             width: "90px",

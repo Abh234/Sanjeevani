@@ -68,7 +68,7 @@ export default function Sidebar({ isOpen, onClose }) {
                 style={{
                     position: "fixed", top: 0, left: 0,
                     width: "min(480px, 48vw)", height: "100vh",
-                    background: "linear-gradient(170deg, #1c2b0d 0%, #2d3d1a 45%, #374c1e 100%)",
+                    background: "linear-gradient(170deg, #0a0a0a 0%, #111111 40%, #1a1a1a 100%)",
                     zIndex: 199,
                     display: "flex", flexDirection: "column", justifyContent: "space-between",
                     padding: "28px 52px 38px",
@@ -125,12 +125,12 @@ export default function Sidebar({ isOpen, onClose }) {
                             Pharma, Reinvented.
                         </span>
                         <a
-                            href="mailto:hello@sanjeevanirxai.com"
+                            href="mailto:hello@bugsentry.com"
                             style={{ color: "#f4ede6", opacity: 0.65, fontSize: "0.62rem", fontWeight: 500, letterSpacing: "0.04em", textDecoration: "none", fontFamily: "'Outfit', sans-serif", transition: "opacity 0.2s" }}
                             onMouseEnter={e => e.currentTarget.style.opacity = 1}
                             onMouseLeave={e => e.currentTarget.style.opacity = 0.65}
                         >
-                            hello@sanjeevanirxai.com
+                            hello@bugsentry.com
                         </a>
                     </div>
 

@@ -42,7 +42,7 @@ export default function DashboardSection() {
     return (
         <section id="dashboard-section" style={{
             /* Full image at natural size, no crop, scrolls to see all like reference site */
-            background: `linear-gradient(180deg, rgba(30,45,15,0.2) 0%, rgba(15,25,8,0.45) 100%), url(${backgroundImage}) center top no-repeat`,
+            background: `linear-gradient(180deg, rgba(10,10,10,0.5) 0%, rgba(0,0,0,0.8) 100%), url(${backgroundImage}) center top no-repeat`,
             backgroundAttachment: "scroll",
             backgroundSize: "100% auto",
             minHeight: "100vh",

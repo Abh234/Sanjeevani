@@ -29,7 +29,7 @@ export default function DeliverySection() {
     return (
         <section id="delivery-section" style={{
             minHeight: "100vh",
-            background: "linear-gradient(180deg, #1a2a0a 0%, #0a1103 100%)",
+            background: "linear-gradient(180deg, #0a0a0a 0%, #000000 100%)",
             padding: "100px 6vw 120px",
             position: "relative",
             display: "flex",
