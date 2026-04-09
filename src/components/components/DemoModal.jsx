@@ -4,7 +4,7 @@ import gsap from "gsap";
 export default function DemoModal({ isOpen, onClose }) {
     const [formData, setFormData] = useState({
         name: "",
-        pharmacyName: "",
+        companyName: "",
         phone: "",
         email: "",
         message: ""
@@ -179,7 +179,7 @@ export default function DemoModal({ isOpen, onClose }) {
                                 justifyContent: "center",
                                 boxShadow: "0 4px 15px rgba(183, 194, 94, 0.3)"
                             }}>
-                                <i className="ri-medicine-bag-line" style={{ color: "#0a1103", fontSize: "1.1rem" }} />
+                                <i className="ri-shield-keyhole-line" style={{ color: "#0a1103", fontSize: "1.1rem" }} />
                             </div>
                             <span style={{
                                 fontFamily: "'Outfit', sans-serif",
@@ -215,7 +215,7 @@ export default function DemoModal({ isOpen, onClose }) {
                             fontFamily: "'Outfit', sans-serif",
                             lineHeight: 1.4
                         }}>
-                            See how BugSentry can transform your pharmacy. Get a personalized walkthrough with our team.
+                            See how BugSentry can secure your production pipelines. Get a personalized walkthrough with our team.
                         </p>
                     </div>
 
@@ -250,13 +250,13 @@ export default function DemoModal({ isOpen, onClose }) {
                                     textTransform: "uppercase",
                                     marginBottom: "6px",
                                     fontFamily: "'Outfit', sans-serif"
-                                }}>Pharmacy Name</label>
+                                }}>Company Name</label>
                                 <input
                                     type="text"
                                     className="demo-input"
                                     required
-                                    value={formData.pharmacyName}
-                                    onChange={(e) => setFormData({ ...formData, pharmacyName: e.target.value })}
+                                    value={formData.companyName}
+                                    onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
                                 />
                             </div>
                         </div>
