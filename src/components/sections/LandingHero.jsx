@@ -65,7 +65,6 @@ export default function LandingHero({ onMenuClick }) {
                             color: '#f4ede6', margin: 0, lineHeight: 0.9, letterSpacing: '-0.03em',
                         }}>
                             BugSentry
-                            <sup style={{ fontSize: '0.2em', color: '#f4ede6', marginLeft: '4px', fontWeight: 400, opacity: 0.7, verticalAlign: 'super' }}>™</sup>
                         </h1>
                     </div>
 

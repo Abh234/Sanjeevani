@@ -98,7 +98,7 @@ export default function Logo3D({ style, color = '#1a1a1a', highlightColor = '#bb
 
         /* ── Centre sphere (small, shiny) ── */
         const sphereGeo = new THREE.SphereGeometry(0.12, 24, 24);
-        const sphereMat = new THREE.MeshStandardMaterial({ color: 0xeeeeee, metalness: 0.9, roughness: 0.1 });
+        const sphereMat = new THREE.MeshStandardMaterial({ color: 0x000000, metalness: 0.9, roughness: 0.1 });
         logo.add(new THREE.Mesh(sphereGeo, sphereMat));
 
         logo.rotation.x = 0.28;  // tilt forward to show depth

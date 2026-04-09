@@ -64,7 +64,6 @@ export default function FeaturesSection() {
                             fontSize: 'clamp(1rem, 2vw, 1.5rem)',
                             color: '#b7c25e', letterSpacing: '0.04em',
                         }}>BugSentry</span>
-                        <sup style={{ fontSize: '0.5em', color: '#b7c25e', opacity: 0.7, marginLeft: '2px', verticalAlign: 'super' }}>™</sup>
                     </div>
 
                     <h2 style={{
