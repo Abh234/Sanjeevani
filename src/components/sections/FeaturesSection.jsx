@@ -55,7 +55,7 @@ export default function FeaturesSection() {
                         color: '#f4ede6', fontSize: '0.7rem', fontWeight: 700,
                         letterSpacing: '0.18em', textTransform: 'uppercase',
                         margin: 0, fontFamily: "'Outfit', sans-serif", opacity: 0.72,
-                    }}>MEET BUGSENTRY</p>
+                    }}>PHARMA, REINVENTED.</p>
 
                     {/* Brand name */}
                     <div style={{ margin: '6px 0 2px' }}>
@@ -72,9 +72,9 @@ export default function FeaturesSection() {
                         fontSize: 'clamp(2rem, 4vw, 3.6rem)',
                         color: '#f4ede6', margin: 0, lineHeight: 1.05, letterSpacing: '-0.02em',
                     }}>
-                        Stop Guessing.<br />
+                        Pharmacy Care<br />
                         <span style={{ fontFamily: "Georgia, serif", fontStyle: 'italic', fontWeight: 700, color: '#c8dfa0' }}>
-                            Start Fixing.
+                            Through Conversation
                         </span>
                     </h2>
 
@@ -82,16 +82,15 @@ export default function FeaturesSection() {
                         color: '#f4ede6', opacity: 0.75, fontSize: '1rem', fontWeight: 400,
                         lineHeight: 1.7, fontFamily: "'Outfit', sans-serif", maxWidth: '460px', margin: 0,
                     }}>
-                        BugSentry analyzes your GitHub repos, explains CI/CD failures, and tells you exactly how to fix them. Built for fast-moving engineering teams that need clarity in seconds.
+                        Patients simply message the pharmacy on WhatsApp or Telegram. The AI understands their request, verifies prescriptions, confirms the order, and sends real-time updates — all within the chat.
                     </p>
 
                     {/* Step pills */}
                     <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '10px', paddingTop: '8px' }}>
                         {[
-                            { label: 'Connect GitHub', icon: 'ri-github-fill' },
-                            { label: 'Analyze repository', icon: 'ri-search-eye-line' },
-                            { label: 'Get AI insights', icon: 'ri-robot-2-line' },
-                            { label: 'Fix instantly', icon: 'ri-tools-line' },
+                            { label: 'Speak or Message', icon: 'ri-message-3-line' },
+                            { label: 'AI Verifies', icon: 'ri-shield-check-line' },
+                            { label: 'Order Completed', icon: 'ri-check-double-line' },
                         ].map((step, idx, arr) => (
                             <React.Fragment key={step.label}>
                                 <span style={{

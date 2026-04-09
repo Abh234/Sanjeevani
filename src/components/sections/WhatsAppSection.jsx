@@ -2,16 +2,16 @@ import React from "react";
 import videoSrc from "../../assets/video/video.mp4";
 
 const WA_CHANNELS = [
-    { name: "GitHub", icon: "ri-github-fill", color: "#25D366", bg: "rgba(37,211,102,0.15)", border: "rgba(37,211,102,0.3)" },
-    { name: "Pipelines", icon: "ri-terminal-box-line", color: "#29B6F6", bg: "rgba(41,182,246,0.15)", border: "rgba(41,182,246,0.3)" },
+    { name: "WhatsApp", icon: "ri-whatsapp-line", color: "#25D366", bg: "rgba(37,211,102,0.15)", border: "rgba(37,211,102,0.3)" },
+    { name: "Telegram", icon: "ri-telegram-line", color: "#29B6F6", bg: "rgba(41,182,246,0.15)", border: "rgba(41,182,246,0.3)" },
     // { name: "Voice Call", icon: "ri-phone-line", color: "#607a30", bg: "rgba(96,122,48,0.15)", border: "rgba(96,122,48,0.3)" },
 ];
 
 const WA_FEATURES = [
-    { icon: "ri-robot-2-line", text: "AI explains CI/CD failures instantly" },
-    { icon: "ri-shield-check-line", text: "Deployment crash detection with root cause" },
-    { icon: "ri-map-pin-2-line", text: "Code risk insights for repeated breakpoints" },
-    { icon: "ri-notification-3-line", text: "Auto issue generation with next actions" },
+    { icon: "ri-robot-2-line", text: "AI intent & language processing" },
+    { icon: "ri-shield-check-line", text: "Auto prescription verification" },
+    { icon: "ri-map-pin-2-line", text: "Real-time delivery tracking" },
+    { icon: "ri-notification-3-line", text: "Proactive refill reminders" },
 ];
 
 export default function WhatsAppSection() {
@@ -34,14 +34,14 @@ export default function WhatsAppSection() {
             <div className="wa-content-box absolute top-0 right-0 w-full md:w-1/2 h-full bg-[#f4ede6] flex flex-col justify-center px-8 md:px-[6vw] lg:px-[6vw]">
                 {/* Title */}
                 <h2 className="font-['Outfit'] font-[900] text-[clamp(2rem,3vw,3.2rem)] text-[#4d6628] mb-5 leading-[1.05] tracking-tight">
-                    Meet BugSentry<br />
-                    <span className="font-serif italic font-[400] text-[#7a9947]">your AI DevOps assistant.</span>
+                    Order medicines<br />
+                    <span className="font-serif italic font-[400] text-[#7a9947]">in a single message.</span>
                 </h2>
 
                 <p className="text-[#4d6628] opacity-80 text-[0.95rem] leading-[1.65] font-['Outfit'] max-w-[480px] mb-8 font-[500]">
-                    Connect your repo and let BugSentry analyze commits, workflows, and deployments.
-                    It highlights what failed, why it failed, and exactly what to change so your team
-                    can ship fixes faster with confidence.
+                    Patients simply message the pharmacy on WhatsApp or Telegram. The AI
+                    understands their request, verifies prescriptions, confirms the order,
+                    and sends real-time updates — all within the chat.
                 </p>
 
                 {/* Channel Badges */}

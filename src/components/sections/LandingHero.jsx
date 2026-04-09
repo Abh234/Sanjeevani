@@ -7,8 +7,10 @@ import Logo3D from "../effects/Logo3D";
  * The initial hero screen with the dark-green gradient, brand title,
  * divider row, and scroll hint. Always sits behind the cube curtain.
  *
+ * Props:
+ *  onMenuClick — passed down to Navbar to open the Sidebar
  */
-export default function LandingHero() {
+export default function LandingHero({ onMenuClick }) {
     return (
         <div
             className="landing-content absolute inset-0 z-10 overflow-hidden"
@@ -49,11 +51,12 @@ export default function LandingHero() {
 
                     {/* Giant brand title */}
                     <div className="hero-text" style={{
-                        position: 'absolute', top: '5%', left: '5%',
+                        position: 'absolute', top: '5%', left: '0', width: '100%',
                         zIndex: 10,
                         transform: 'rotate(-8deg)',
-                        transformOrigin: 'left top',
+                        transformOrigin: 'center top',
                         opacity: 0.97,
+                        textAlign: 'center',
                     }}>
                         <h1 style={{
                             fontFamily: "'Outfit', sans-serif", fontWeight: 900,
@@ -63,24 +66,6 @@ export default function LandingHero() {
                             BugSentry
                             <sup style={{ fontSize: '0.2em', color: '#f4ede6', marginLeft: '4px', fontWeight: 400, opacity: 0.7, verticalAlign: 'super' }}>™</sup>
                         </h1>
-                    </div>
-
-                    {/* Horizontal divider row */}
-                    <div className="absolute top-[38%] md:top-[35%] left-[5%] right-[5%] z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-0">
-                        <p style={{
-                            color: '#f4ede6', fontSize: 'clamp(0.55rem, 1.2vw, 0.7rem)', fontWeight: 600,
-                            letterSpacing: '0.18em', textTransform: 'uppercase',
-                            margin: 0, fontFamily: "'Outfit', sans-serif", opacity: 0.82, flexShrink: 0,
-                        }}>UNDERSTAND FAILURES. FIX THEM FASTER.</p>
-
-                        <div className="hidden md:block flex-1 h-[1px]" style={{ backgroundColor: 'rgba(244,237,230,0.25)', margin: '0 18px', minWidth: '20px' }} />
-
-                        <p className="text-left md:text-right" style={{
-                            color: '#f4ede6', fontSize: 'clamp(0.55rem, 1.2vw, 0.7rem)', fontWeight: 500,
-                            letterSpacing: '0.04em', lineHeight: 1.5,
-                            fontFamily: "'Outfit', sans-serif", opacity: 0.75,
-                            margin: 0, maxWidth: '280px', flexShrink: 0,
-                        }}>AI DEVOPS ASSISTANT —<br className="hidden md:inline" /> BUILT FOR STARTUP TEAMS.</p>
                     </div>
 
                     {/* Scroll hint */}

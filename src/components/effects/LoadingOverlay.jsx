@@ -101,7 +101,7 @@ export default function LoadingOverlay({ onComplete }) {
                             {/* ── BUGSENTRY ── */}
                             <text
                                 x="50%" y="295"
-                                fontSize="72"
+                                fontSize="88"
                                 textAnchor="middle"
                                 dominantBaseline="middle"
                                 fontFamily="'Outfit', sans-serif"

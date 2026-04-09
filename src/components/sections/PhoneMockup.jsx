@@ -95,7 +95,7 @@ export default function PhoneMockup() {
                                     <span style={{ color: '#f4ede6', opacity: 0.4, fontSize: '0.58rem' }}>1m ago</span>
                                 </div>
                                 <p style={{ color: '#f4ede6', opacity: 0.8, fontSize: '0.68rem', margin: '2px 0 0', lineHeight: 1.4, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                                    Root cause found in Dockerfile layer cache.
+                                    Root cause found in `Dockerfile` layer cache.
                                 </p>
                             </div>
                         </div>

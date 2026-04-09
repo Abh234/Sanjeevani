@@ -50,13 +50,13 @@ export default function Navbar({ onMenuClick, onBookDemo }) {
             </button>
 
             <div className="hidden md:flex items-center gap-[22px]">
-                <a href="#footer-section" className="nav-link">DOCS</a>
+                <a href="#footer-section" className="nav-link">CONTACT US</a>
                 <button
                     onClick={onBookDemo}
                     className="nav-link"
                     style={{ background: 'none', border: 'none', cursor: 'pointer' }}
                 >
-                    TRY DEMO
+                    BOOK A DEMO
                 </button>
             </div>
         </div>

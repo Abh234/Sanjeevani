@@ -3,27 +3,27 @@
  * Brand story, mission pillars, and key stats.
  */
 const STATS = [
-    { value: "1.2K+", label: "Failures Explained" },
-    { value: "420+", label: "Repos Connected" },
-    { value: "38%", label: "Avg. MTTR Drop" },
+    { value: "10K+", label: "Patients Served" },
+    { value: "50+", label: "Pharmacies Online" },
+    { value: "4", label: "AI Channels" },
     { value: "24 / 7", label: "Always On" },
 ];
 
 const PILLARS = [
     {
         icon: "ri-heart-pulse-line",
-        title: "Developer-First",
-        body: "Clear explanations and next steps — written for engineers, not dashboards.",
+        title: "Patient-First",
+        body: "Every interaction is designed around the patient — fast, intuitive, and empathetic.",
     },
     {
         icon: "ri-robot-2-line",
         title: "AI-Native",
-        body: "Purpose-built to read CI/CD logs, diffs, and deployment signals together.",
+        body: "Built from the ground up with conversational AI — not bolted on as an afterthought.",
     },
     {
         icon: "ri-lock-2-line",
-        title: "Secure by Design",
-        body: "Least-privilege GitHub access with audit-friendly activity you can trust.",
+        title: "Secure & Compliant",
+        body: "End-to-end encrypted, HIPAA-aligned, prescription-verified at every step.",
     },
 ];
 
@@ -55,7 +55,7 @@ export default function AboutSection() {
                 color: "#b7c25e", fontSize: "0.7rem", fontWeight: 700,
                 letterSpacing: "0.24em", textTransform: "uppercase",
                 fontFamily: "'Outfit', sans-serif", margin: "0 0 18px",
-            }}>Our Mission</p>
+            }}>Who We Are</p>
 
             {/* Hero headline */}
             <h2 className="about-anim" style={{
@@ -69,7 +69,7 @@ export default function AboutSection() {
                 <span style={{
                     fontFamily: "Georgia, serif", fontStyle: "italic",
                     fontWeight: 400, fontSize: "0.52em", color: "#c8dfa0",
-                }}>— DevOps, Clarified.</span>
+                }}>— Pharmacy, Reimagined.</span>
             </h2>
 
             {/* Body text */}
@@ -78,8 +78,9 @@ export default function AboutSection() {
                 fontSize: "1.05rem", fontWeight: 400, lineHeight: 1.75,
                 fontFamily: "'Outfit', sans-serif", maxWidth: "580px", margin: "0 0 64px",
             }}>
-                We're building the reliability layer modern teams need: an AI assistant that connects to GitHub,
-                understands CI/CD and deployment failures, and turns noisy logs into fixes you can ship immediately.
+                We're building the infrastructure that lets any pharmacy reach every
+                patient — through WhatsApp, voice calls, or Telegram — powered by
+                an AI that speaks the patient's language.
             </p>
 
             {/* Pillars */}

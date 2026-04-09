@@ -58,11 +58,11 @@ export default function BlackSection() {
                 {/* Left Text (Top aligned) */}
                 <div className="flex flex-col justify-start h-full pt-[30vh]">
                     <h2 className="text-[2.5rem] md:text-[3vw] lg:text-[3.5vw] font-[500] leading-[1.1] tracking-tight text-[#4d6628] font-['Outfit']">
-                        Built for modern
+                        Order medicines
                         <br />
-                        developers and
+                        effortlessly via
                         <br />
-                        startup teams
+                        WhatsApp
                     </h2>
                 </div>
 
@@ -84,9 +84,9 @@ export default function BlackSection() {
                 {/* Right Text (Bottom aligned) */}
                 <div className="flex flex-col justify-end h-full pb-[30vh]">
                     <h2 className="text-[2.5rem] md:text-[3vw] lg:text-[3.5vw] font-[500] leading-[1.1] tracking-tight text-[#4d6628] font-['Outfit'] md:text-left pl-0 md:pl-12">
-                        Debugging is broken:
+                        verified instantly
                         <br />
-                        logs are noisy, causes unclear
+                        by our AI
                     </h2>
                 </div>
 
