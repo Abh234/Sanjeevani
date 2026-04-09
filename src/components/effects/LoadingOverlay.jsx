@@ -6,7 +6,7 @@ import gsap from 'gsap';
  *
  * Cream-coloured full-screen overlay with transparent cut-outs:
  *   • 6-petal logo mark above the text (shows dark green page behind)
- *   • "SANJEEVANI" lettering
+ *   • "BUGSENTRY" lettering
  *
  * GSAP timeline (self-contained):
  *   0.0s  Mask group scale 0 → 1  (logo + text appear as transparent windows)
@@ -98,10 +98,10 @@ export default function LoadingOverlay({ onComplete }) {
                                 <circle cx="0" cy="0" r="5" fill="black" />
                             </g>
 
-                            {/* ── SANJEEVANI ── */}
+                            {/* ── BUGSENTRY ── */}
                             <text
                                 x="50%" y="295"
-                                fontSize="88"
+                                fontSize="72"
                                 textAnchor="middle"
                                 dominantBaseline="middle"
                                 fontFamily="'Outfit', sans-serif"
@@ -109,7 +109,7 @@ export default function LoadingOverlay({ onComplete }) {
                                 letterSpacing="3"
                                 fill="black"
                             >
-                                SANJEEVANI
+                                BUGSENTRY
                             </text>
                         </g>
                     </mask>

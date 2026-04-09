@@ -14,11 +14,11 @@ export default function Sidebar({ isOpen, onClose }) {
     const footerRef = useRef(null);
     const navLinks = [
         { label: "Home", href: "#" },
-        { label: "Features", href: "#features-section" },
-        { label: "Ordering", href: "#whatsapp-section" },
-        { label: "Voice", href: "#sms-voice-section" },
-        { label: "Dashboard", href: "#dashboard-section" },
-        { label: "Delivery", href: "#delivery-section" },
+        { label: "Product", href: "#features-section" },
+        { label: "Problem", href: "#black-medical-section" },
+        { label: "Solution", href: "#whatsapp-section" },
+        { label: "Preview", href: "#dashboard-section" },
+        { label: "Why BugSentry", href: "#delivery-section" },
         { label: "Contact", href: "#footer-section" },
     ];
 
@@ -122,20 +122,20 @@ export default function Sidebar({ isOpen, onClose }) {
                 <div ref={footerRef} style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", opacity: 0 }}>
                     <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
                         <span style={{ color: "#f4ede6", opacity: 0.45, fontSize: "0.6rem", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", fontFamily: "'Outfit', sans-serif" }}>
-                            Pharma, Reinvented.
+                            Understand failures. Fix them faster.
                         </span>
                         <a
-                            href="mailto:hello@sanjeevanirxai.com"
+                            href="mailto:contact@bugsentry.com"
                             style={{ color: "#f4ede6", opacity: 0.65, fontSize: "0.62rem", fontWeight: 500, letterSpacing: "0.04em", textDecoration: "none", fontFamily: "'Outfit', sans-serif", transition: "opacity 0.2s" }}
                             onMouseEnter={e => e.currentTarget.style.opacity = 1}
                             onMouseLeave={e => e.currentTarget.style.opacity = 0.65}
                         >
-                            hello@sanjeevanirxai.com
+                            contact@bugsentry.com
                         </a>
                     </div>
 
                     <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: "7px" }}>
-                        {["LinkedIn", "WhatsApp"].map(name => (
+                        {["LinkedIn", "GitHub"].map(name => (
                             <a key={name} href="#"
                                 style={{ ...linkBase, opacity: 0.6 }}
                                 onMouseEnter={e => e.currentTarget.style.opacity = 1}

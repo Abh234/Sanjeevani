@@ -6,36 +6,36 @@
 import backgroundImage from "../../assets/image/imagebackgrouns.png";
 
 const KPIS = [
-    { icon: "ri-shopping-bag-3-line", label: "Orders Today", value: "284", delta: "+12%", color: "#b7c25e" },
-    { icon: "ri-money-rupee-circle-line", label: "Revenue", value: "₹1.2L", delta: "+8%", color: "#7dcf50" },
-    { icon: "ri-time-line", label: "Pending", value: "18", delta: "-3", color: "#f4c542" },
-    { icon: "ri-medicine-bottle-line", label: "Low Stock", value: "7", delta: "Alert", color: "#ff6b6b" },
+    { icon: "ri-close-circle-line", label: "CI Failures", value: "27", delta: "-18%", color: "#b7c25e" },
+    { icon: "ri-alarm-warning-line", label: "Deploy Crashes", value: "6", delta: "-2", color: "#7dcf50" },
+    { icon: "ri-timer-line", label: "MTTR", value: "14m", delta: "-31%", color: "#f4c542" },
+    { icon: "ri-bug-2-line", label: "Recurring Issues", value: "9", delta: "Tracked", color: "#ff6b6b" },
 ];
 
 const CHART_BARS = [40, 65, 50, 80, 72, 90, 84];
 const CHART_DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 const ORDERS = [
-    { id: "#RX4821", patient: "Ramesh K.", item: "Metformin 500mg", status: "Delivered", statusColor: "#7dcf50" },
-    { id: "#RX4820", patient: "Priya M.", item: "Lisinopril 10mg", status: "Out for Delivery", statusColor: "#b7c25e" },
-    { id: "#RX4819", patient: "Arun S.", item: "Atorvastatin 20mg", status: "Processing", statusColor: "#f4c542" },
-    { id: "#RX4818", patient: "Seema T.", item: "Paracetamol 500mg", status: "Delivered", statusColor: "#7dcf50" },
-    { id: "#RX4817", patient: "Rohit V.", item: "Azithromycin 500mg", status: "Processing", statusColor: "#f4c542" },
+    { id: "#CI4821", patient: "checkout-service", item: "Pipeline timeout on integration tests", status: "Explained", statusColor: "#7dcf50" },
+    { id: "#DP4820", patient: "web-app", item: "Container restart loop in production", status: "Fix Suggested", statusColor: "#b7c25e" },
+    { id: "#CI4819", patient: "api-gateway", item: "Missing env var in staging workflow", status: "Investigating", statusColor: "#f4c542" },
+    { id: "#DP4818", patient: "auth-service", item: "Helm release failed on health checks", status: "Explained", statusColor: "#7dcf50" },
+    { id: "#CI4817", patient: "worker-jobs", item: "Docker layer invalidation spike", status: "Investigating", statusColor: "#f4c542" },
 ];
 
 const SIDEBAR_ITEMS = [
-    { icon: "ri-dashboard-line", label: "Dashboard", active: true },
-    { icon: "ri-file-list-3-line", label: "Orders", active: false },
-    { icon: "ri-medicine-bottle-line", label: "Inventory", active: false },
-    { icon: "ri-bar-chart-2-line", label: "Analytics", active: false },
-    { icon: "ri-team-line", label: "Customers", active: false },
+    { icon: "ri-dashboard-line", label: "Overview", active: true },
+    { icon: "ri-file-list-3-line", label: "Failures", active: false },
+    { icon: "ri-medicine-bottle-line", label: "Deployments", active: false },
+    { icon: "ri-bar-chart-2-line", label: "Insights", active: false },
+    { icon: "ri-team-line", label: "Repositories", active: false },
     { icon: "ri-settings-3-line", label: "Settings", active: false },
 ];
 
 const QUICK_STATS = [
-    { icon: "ri-whatsapp-line", label: "WhatsApp Orders", value: "142", color: "#25D366" },
-    { icon: "ri-telegram-line", label: "Telegram Orders", value: "89", color: "#b7c25e" },
-    { icon: "ri-phone-line", label: "Voice Orders", value: "53", color: "#7dcf50" },
+    { icon: "ri-github-fill", label: "Connected Repos", value: "142", color: "#25D366" },
+    { icon: "ri-git-branch-line", label: "Active Pipelines", value: "89", color: "#b7c25e" },
+    { icon: "ri-robot-2-line", label: "AI Explanations", value: "53", color: "#7dcf50" },
 ];
 
 export default function DashboardSection() {
@@ -57,12 +57,12 @@ export default function DashboardSection() {
             {/* ── Header ── */}
             <div className="dash-anim">
                 <p style={{ color: "#b7c25e", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.26em", textTransform: "uppercase", fontFamily: "'Outfit', sans-serif", margin: "0 0 10px" }}>
-                    Pharmacy Command Centre
+                    Product Preview
                 </p>
                 <h2 style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 900, fontSize: "clamp(1.8rem, 4vw, 3.4rem)", color: "#f4ede6", margin: "0 0 10px", lineHeight: 1.05 }}>
-                    Your patients order via chat —
+                    See failures, explanations,
                     <br />
-                    <span style={{ fontFamily: "Georgia, serif", fontStyle: "italic", fontWeight: 400, color: "#c8dfa0" }}>you manage it all here.</span>
+                    <span style={{ fontFamily: "Georgia, serif", fontStyle: "italic", fontWeight: 400, color: "#c8dfa0" }}>and fix suggestions in one place.</span>
                 </h2>
             </div>
 
@@ -102,8 +102,8 @@ export default function DashboardSection() {
                 {/* ── Sidebar ── */}
                 <div style={{ borderRight: "1px solid rgba(183,194,94,0.08)", padding: "20px 0", background: "rgba(0,0,0,0.3)" }}>
                     <div style={{ padding: "0 18px 18px", borderBottom: "1px solid rgba(244,237,230,0.06)", marginBottom: "10px" }}>
-                        <div style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 900, fontSize: "0.82rem", color: "#f4ede6" }}>Sanjeevani</div>
-                        <div style={{ color: "#b7c25e", fontSize: "0.58rem", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", fontFamily: "'Outfit', sans-serif", marginTop: "2px" }}>Pharmacy Portal</div>
+                        <div style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 900, fontSize: "0.82rem", color: "#f4ede6" }}>BugSentry</div>
+                        <div style={{ color: "#b7c25e", fontSize: "0.58rem", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", fontFamily: "'Outfit', sans-serif", marginTop: "2px" }}>DevOps Workspace</div>
                     </div>
                     {SIDEBAR_ITEMS.map(item => (
                         <div key={item.label} style={{
@@ -124,7 +124,7 @@ export default function DashboardSection() {
                             <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#25D366", display: "inline-block", boxShadow: "0 0 6px #25D366" }} />
                             <span style={{ color: "#25D366", fontSize: "0.62rem", fontWeight: 700, fontFamily: "'Outfit', sans-serif", letterSpacing: "0.06em" }}>AI ACTIVE</span>
                         </div>
-                        <div style={{ color: "#f4ede6", opacity: 0.45, fontSize: "0.58rem", fontFamily: "'Outfit', sans-serif" }}>Handling incoming orders</div>
+                        <div style={{ color: "#f4ede6", opacity: 0.45, fontSize: "0.58rem", fontFamily: "'Outfit', sans-serif" }}>Analyzing failure patterns</div>
                     </div>
                 </div>
 
@@ -134,12 +134,12 @@ export default function DashboardSection() {
                     {/* Topbar */}
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                         <div>
-                            <div style={{ color: "#f4ede6", fontWeight: 700, fontSize: "0.95rem", fontFamily: "'Outfit', sans-serif" }}>Good Morning, Dr. Mehta 👋</div>
+                            <div style={{ color: "#f4ede6", fontWeight: 700, fontSize: "0.95rem", fontFamily: "'Outfit', sans-serif" }}>Good Morning, Platform Team</div>
                             <div style={{ color: "#f4ede6", opacity: 0.4, fontSize: "0.68rem", fontFamily: "'Outfit', sans-serif", marginTop: "1px" }}>Saturday, 22 Feb 2026</div>
                         </div>
                         <div style={{ display: "flex", gap: "8px" }}>
-                            <button style={{ background: "rgba(183,194,94,0.1)", border: "1px solid rgba(183,194,94,0.25)", borderRadius: "9px", padding: "6px 13px", color: "#b7c25e", fontSize: "0.68rem", fontWeight: 700, fontFamily: "'Outfit', sans-serif", cursor: "pointer", letterSpacing: "0.05em" }}>+ Add Medicine</button>
-                            <button style={{ background: "rgba(125,207,80,0.1)", border: "1px solid rgba(125,207,80,0.25)", borderRadius: "9px", padding: "6px 13px", color: "#7dcf50", fontSize: "0.68rem", fontWeight: 700, fontFamily: "'Outfit', sans-serif", cursor: "pointer", letterSpacing: "0.05em" }}>View All Orders</button>
+                            <button style={{ background: "rgba(183,194,94,0.1)", border: "1px solid rgba(183,194,94,0.25)", borderRadius: "9px", padding: "6px 13px", color: "#b7c25e", fontSize: "0.68rem", fontWeight: 700, fontFamily: "'Outfit', sans-serif", cursor: "pointer", letterSpacing: "0.05em" }}>Connect GitHub</button>
+                            <button style={{ background: "rgba(125,207,80,0.1)", border: "1px solid rgba(125,207,80,0.25)", borderRadius: "9px", padding: "6px 13px", color: "#7dcf50", fontSize: "0.68rem", fontWeight: 700, fontFamily: "'Outfit', sans-serif", cursor: "pointer", letterSpacing: "0.05em" }}>See Demo</button>
                         </div>
                     </div>
 
@@ -161,8 +161,8 @@ export default function DashboardSection() {
                     <div style={{ display: "grid", gridTemplateColumns: "1fr 1.5fr", gap: "14px", flex: 1 }}>
                         {/* Bar Chart */}
                         <div style={{ background: "rgba(244,237,230,0.03)", border: "1px solid rgba(244,237,230,0.07)", borderRadius: "14px", padding: "16px" }}>
-                            <div style={{ color: "#f4ede6", fontWeight: 700, fontSize: "0.75rem", fontFamily: "'Outfit', sans-serif", marginBottom: "4px", opacity: 0.85 }}>Inbound Orders (AI Channels)</div>
-                            <div style={{ color: "#b7c25e", fontSize: "0.58rem", fontFamily: "'Outfit', sans-serif", marginBottom: "14px", opacity: 0.7 }}>WhatsApp · Telegram · Voice</div>
+                            <div style={{ color: "#f4ede6", fontWeight: 700, fontSize: "0.75rem", fontFamily: "'Outfit', sans-serif", marginBottom: "4px", opacity: 0.85 }}>Failure Trend (7 days)</div>
+                            <div style={{ color: "#b7c25e", fontSize: "0.58rem", fontFamily: "'Outfit', sans-serif", marginBottom: "14px", opacity: 0.7 }}>CI · Deploy · Runtime</div>
                             <div style={{ display: "flex", alignItems: "flex-end", gap: "6px", height: "100px" }}>
                                 {CHART_BARS.map((h, i) => (
                                     <div key={i} style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", gap: "4px", height: "100%" }}>
@@ -178,8 +178,8 @@ export default function DashboardSection() {
                         {/* Orders Table */}
                         <div style={{ background: "rgba(244,237,230,0.03)", border: "1px solid rgba(244,237,230,0.07)", borderRadius: "14px", padding: "16px", overflow: "auto" }}>
                             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "12px" }}>
-                                <div style={{ color: "#f4ede6", fontWeight: 700, fontSize: "0.75rem", fontFamily: "'Outfit', sans-serif", opacity: 0.85 }}>Recent Orders</div>
-                                <span style={{ color: "#b7c25e", fontSize: "0.6rem", fontWeight: 600, fontFamily: "'Outfit', sans-serif", opacity: 0.7 }}>via WhatsApp / Telegram / Call</span>
+                                <div style={{ color: "#f4ede6", fontWeight: 700, fontSize: "0.75rem", fontFamily: "'Outfit', sans-serif", opacity: 0.85 }}>Recent Issues</div>
+                                <span style={{ color: "#b7c25e", fontSize: "0.6rem", fontWeight: 600, fontFamily: "'Outfit', sans-serif", opacity: 0.7 }}>AI explanations + suggested fixes</span>
                             </div>
                             {ORDERS.map(o => (
                                 <div key={o.id} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "7px 0", borderBottom: "1px solid rgba(244,237,230,0.04)" }}>
@@ -204,10 +204,10 @@ export default function DashboardSection() {
                     }}>
                         <i className="ri-error-warning-line" style={{ color: "#ff6b6b", fontSize: "1rem", flexShrink: 0 }} />
                         <div style={{ flex: 1 }}>
-                            <span style={{ color: "#ff6b6b", fontWeight: 700, fontSize: "0.7rem", fontFamily: "'Outfit', sans-serif" }}>Low Stock Alert — </span>
-                            <span style={{ color: "#f4ede6", opacity: 0.6, fontSize: "0.68rem", fontFamily: "'Outfit', sans-serif" }}>7 medicines below reorder level. Metformin 500mg &amp; 3 others need restocking.</span>
+                            <span style={{ color: "#ff6b6b", fontWeight: 700, fontSize: "0.7rem", fontFamily: "'Outfit', sans-serif" }}>Release Risk Alert - </span>
+                            <span style={{ color: "#f4ede6", opacity: 0.6, fontSize: "0.68rem", fontFamily: "'Outfit', sans-serif" }}>Recurring failure detected in checkout-service. Recommended: rollback to last stable image and patch env config.</span>
                         </div>
-                        <button style={{ background: "rgba(255,107,107,0.12)", border: "1px solid rgba(255,107,107,0.25)", borderRadius: "8px", padding: "5px 12px", color: "#ff6b6b", fontSize: "0.62rem", fontWeight: 700, fontFamily: "'Outfit', sans-serif", cursor: "pointer", whiteSpace: "nowrap" }}>View Inventory</button>
+                        <button style={{ background: "rgba(255,107,107,0.12)", border: "1px solid rgba(255,107,107,0.25)", borderRadius: "8px", padding: "5px 12px", color: "#ff6b6b", fontSize: "0.62rem", fontWeight: 700, fontFamily: "'Outfit', sans-serif", cursor: "pointer", whiteSpace: "nowrap" }}>View Fix</button>
                     </div>
                 </div>
             </div>

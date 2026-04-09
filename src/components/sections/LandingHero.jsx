@@ -7,10 +7,8 @@ import Logo3D from "../effects/Logo3D";
  * The initial hero screen with the dark-green gradient, brand title,
  * divider row, and scroll hint. Always sits behind the cube curtain.
  *
- * Props:
- *  onMenuClick — passed down to Navbar to open the Sidebar
  */
-export default function LandingHero({ onMenuClick }) {
+export default function LandingHero() {
     return (
         <div
             className="landing-content absolute inset-0 z-10 overflow-hidden"
@@ -62,7 +60,7 @@ export default function LandingHero({ onMenuClick }) {
                             fontSize: 'clamp(3rem, 15vw, 11rem)',
                             color: '#f4ede6', margin: 0, lineHeight: 0.9, letterSpacing: '-0.03em',
                         }}>
-                            Sanjeevani
+                            BugSentry
                             <sup style={{ fontSize: '0.2em', color: '#f4ede6', marginLeft: '4px', fontWeight: 400, opacity: 0.7, verticalAlign: 'super' }}>™</sup>
                         </h1>
                     </div>
@@ -73,7 +71,7 @@ export default function LandingHero({ onMenuClick }) {
                             color: '#f4ede6', fontSize: 'clamp(0.55rem, 1.2vw, 0.7rem)', fontWeight: 600,
                             letterSpacing: '0.18em', textTransform: 'uppercase',
                             margin: 0, fontFamily: "'Outfit', sans-serif", opacity: 0.82, flexShrink: 0,
-                        }}>PHARMA, REINVENTED.</p>
+                        }}>UNDERSTAND FAILURES. FIX THEM FASTER.</p>
 
                         <div className="hidden md:block flex-1 h-[1px]" style={{ backgroundColor: 'rgba(244,237,230,0.25)', margin: '0 18px', minWidth: '20px' }} />
 
@@ -82,7 +80,7 @@ export default function LandingHero({ onMenuClick }) {
                             letterSpacing: '0.04em', lineHeight: 1.5,
                             fontFamily: "'Outfit', sans-serif", opacity: 0.75,
                             margin: 0, maxWidth: '280px', flexShrink: 0,
-                        }}>SMART PHARMACY —<br className="hidden md:inline" /> REIMAGINED FOR THE FUTURE.</p>
+                        }}>AI DEVOPS ASSISTANT —<br className="hidden md:inline" /> BUILT FOR STARTUP TEAMS.</p>
                     </div>
 
                     {/* Scroll hint */}

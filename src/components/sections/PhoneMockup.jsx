@@ -57,10 +57,10 @@ export default function PhoneMockup() {
                             <i className="ri-robot-2-fill" style={{ color: '#f4ede6', fontSize: '1rem' }} />
                         </div>
                         <div>
-                            <div style={{ color: '#f4ede6', fontWeight: 700, fontSize: '0.78rem', fontFamily: "'Outfit', sans-serif" }}>Sanjeevani</div>
+                            <div style={{ color: '#f4ede6', fontWeight: 700, fontSize: '0.78rem', fontFamily: "'Outfit', sans-serif" }}>BugSentry</div>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
                                 <div style={{ width: '5px', height: '5px', borderRadius: '50%', background: '#7dcf50' }} />
-                                <span style={{ color: '#7dcf50', fontSize: '0.58rem', fontWeight: 600 }}>Active on all channels</span>
+                                <span style={{ color: '#7dcf50', fontSize: '0.58rem', fontWeight: 600 }}>AI analysis running</span>
                             </div>
                         </div>
                     </div>
@@ -75,11 +75,11 @@ export default function PhoneMockup() {
                             </div>
                             <div style={{ flex: 1, minWidth: 0 }}>
                                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                                    <span style={{ color: '#25D366', fontSize: '0.72rem', fontWeight: 700, fontFamily: "'Outfit', sans-serif" }}>WhatsApp</span>
+                                    <span style={{ color: '#25D366', fontSize: '0.72rem', fontWeight: 700, fontFamily: "'Outfit', sans-serif" }}>CI/CD</span>
                                     <span style={{ color: '#f4ede6', opacity: 0.4, fontSize: '0.58rem' }}>now</span>
                                 </div>
                                 <p style={{ color: '#f4ede6', opacity: 0.8, fontSize: '0.68rem', margin: '2px 0 0', lineHeight: 1.4, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                                    Your Lisinopril refill is confirmed ✅
+                                    Build failed: migration step timed out.
                                 </p>
                             </div>
                         </div>
@@ -91,11 +91,11 @@ export default function PhoneMockup() {
                             </div>
                             <div style={{ flex: 1, minWidth: 0 }}>
                                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                                    <span style={{ color: '#29B6F6', fontSize: '0.72rem', fontWeight: 700, fontFamily: "'Outfit', sans-serif" }}>Telegram</span>
+                                    <span style={{ color: '#29B6F6', fontSize: '0.72rem', fontWeight: 700, fontFamily: "'Outfit', sans-serif" }}>Deploy</span>
                                     <span style={{ color: '#f4ede6', opacity: 0.4, fontSize: '0.58rem' }}>1m ago</span>
                                 </div>
                                 <p style={{ color: '#f4ede6', opacity: 0.8, fontSize: '0.68rem', margin: '2px 0 0', lineHeight: 1.4, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                                    Track your order — pickup at 4 PM 🕓
+                                    Root cause found in Dockerfile layer cache.
                                 </p>
                             </div>
                         </div>
@@ -107,11 +107,11 @@ export default function PhoneMockup() {
                             </div>
                             <div style={{ flex: 1, minWidth: 0 }}>
                                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                                    <span style={{ color: '#f4ede6', fontSize: '0.72rem', fontWeight: 700, fontFamily: "'Outfit', sans-serif" }}>Voice Call</span>
+                                    <span style={{ color: '#f4ede6', fontSize: '0.72rem', fontWeight: 700, fontFamily: "'Outfit', sans-serif" }}>AI Assistant</span>
                                     <span style={{ background: 'rgba(125,207,80,0.2)', color: '#7dcf50', fontSize: '0.56rem', fontWeight: 700, padding: '2px 7px', borderRadius: '99px', border: '1px solid rgba(125,207,80,0.3)' }}>LIVE</span>
                                 </div>
                                 <p style={{ color: '#f4ede6', opacity: 0.8, fontSize: '0.68rem', margin: '2px 0 0', lineHeight: 1.4 }}>
-                                    AI agent on call — 0:42 🎙️
+                                    Suggested fix PR + issue draft ready.
                                 </p>
                             </div>
                         </div>
@@ -136,7 +136,7 @@ export default function PhoneMockup() {
                     transform: 'rotate(4deg)'
                 }}>
                     <i className="ri-whatsapp-line" style={{ color: '#fff', fontSize: '1.4rem', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))' }} />
-                    <span style={{ color: '#fff', fontWeight: 700, fontFamily: "'Outfit', sans-serif", fontSize: '0.85rem', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>WhatsApp</span>
+                    <span style={{ color: '#fff', fontWeight: 700, fontFamily: "'Outfit', sans-serif", fontSize: '0.85rem', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>CI/CD Analyzer</span>
                 </div>
 
                 {/* Telegram — top-left offset */}
@@ -150,7 +150,7 @@ export default function PhoneMockup() {
                     transform: 'rotate(-6deg)'
                 }}>
                     <i className="ri-telegram-line" style={{ color: '#fff', fontSize: '1.4rem', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))' }} />
-                    <span style={{ color: '#fff', fontWeight: 700, fontFamily: "'Outfit', sans-serif", fontSize: '0.85rem', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>Telegram</span>
+                    <span style={{ color: '#fff', fontWeight: 700, fontFamily: "'Outfit', sans-serif", fontSize: '0.85rem', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>Deploy Detection</span>
                 </div>
 
                 {/* Phone Call — bottom-left offset */}
@@ -164,7 +164,7 @@ export default function PhoneMockup() {
                     transform: 'rotate(5deg)'
                 }}>
                     <i className="ri-phone-fill" style={{ color: '#f4ede6', fontSize: '1.4rem', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))' }} />
-                    <span style={{ color: '#f4ede6', fontWeight: 700, fontFamily: "'Outfit', sans-serif", fontSize: '0.85rem', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>Voice Call</span>
+                    <span style={{ color: '#f4ede6', fontWeight: 700, fontFamily: "'Outfit', sans-serif", fontSize: '0.85rem', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>Fix Suggestions</span>
                 </div>
             </div>
         </div>

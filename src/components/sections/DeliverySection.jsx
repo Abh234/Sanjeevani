@@ -40,13 +40,13 @@ export default function DeliverySection() {
             {/* Header */}
             <div className="delivery-anim" style={{ textAlign: "center", marginBottom: "60px", maxWidth: "800px" }}>
                 <p style={{ color: "#b7c25e", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.24em", textTransform: "uppercase", fontFamily: "'Outfit', sans-serif", margin: "0 0 16px" }}>
-                    Native Android Apps
+                    Why BugSentry
                 </p>
                 <h2 style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 900, fontSize: "clamp(2rem, 5vw, 4rem)", color: "#f4ede6", margin: "0 0 24px", lineHeight: 1.05 }}>
-                    Pharmacist & Rider <span style={{ fontFamily: "Georgia, serif", fontStyle: "italic", fontWeight: 400, color: "#c8dfa0", display: "inline-block" }}>in perfect sync.</span>
+                    Not Just Monitoring <span style={{ fontFamily: "Georgia, serif", fontStyle: "italic", fontWeight: 400, color: "#c8dfa0", display: "inline-block" }}>understanding.</span>
                 </h2>
                 <p style={{ color: "#f4ede6", opacity: 0.65, fontSize: "1.05rem", lineHeight: 1.6, fontFamily: "'Outfit', sans-serif", margin: "0 auto" }}>
-                    Manage prescriptions, assign deliveries, and track real-time routes seamlessly through our modern, dedicated mobile applications designed for your pharmacy team.
+                    BugSentry explains errors, suggests fixes, automates issue tracking, and helps developers resolve incidents before they hit customers.
                 </p>
             </div>
 
@@ -62,8 +62,8 @@ export default function DeliverySection() {
                         {/* Top Bar */}
                         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "24px" }}>
                             <div>
-                                <h3 style={{ color: "#f4ede6", fontSize: "1.1rem", fontWeight: 800, fontFamily: "'Outfit', sans-serif", margin: 0 }}>Sanjeevani</h3>
-                                <p style={{ color: "#b7c25e", fontSize: "0.7rem", margin: "2px 0 0", fontFamily: "'Outfit', sans-serif", fontWeight: 600 }}>Pharmacy Manager</p>
+                                <h3 style={{ color: "#f4ede6", fontSize: "1.1rem", fontWeight: 800, fontFamily: "'Outfit', sans-serif", margin: 0 }}>BugSentry</h3>
+                                <p style={{ color: "#b7c25e", fontSize: "0.7rem", margin: "2px 0 0", fontFamily: "'Outfit', sans-serif", fontWeight: 600 }}>Feature Overview</p>
                             </div>
                             <div style={{ width: "38px", height: "38px", borderRadius: "50%", background: "rgba(183,194,94,0.12)", border: "1px solid rgba(183,194,94,0.2)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                                 <i className="ri-store-2-line" style={{ color: "#b7c25e", fontSize: "1.2rem" }} />
@@ -72,19 +72,19 @@ export default function DeliverySection() {
 
                         {/* Summary Widget */}
                         <div style={{ background: "rgba(244,237,230,0.04)", border: "1px solid rgba(244,237,230,0.08)", borderRadius: "20px", padding: "18px", marginBottom: "20px" }}>
-                            <div style={{ color: "#f4ede6", fontSize: "0.75rem", opacity: 0.7, marginBottom: "8px", fontFamily: "'Outfit', sans-serif", fontWeight: 600 }}>Unassigned Orders</div>
+                            <div style={{ color: "#f4ede6", fontSize: "0.75rem", opacity: 0.7, marginBottom: "8px", fontFamily: "'Outfit', sans-serif", fontWeight: 600 }}>Core Features</div>
                             <div style={{ display: "flex", alignItems: "baseline", gap: "8px" }}>
-                                <div style={{ fontSize: "2rem", color: "#f4ede6", fontWeight: 800, fontFamily: "'Outfit', sans-serif", lineHeight: 1 }}>12</div>
-                                <div style={{ fontSize: "0.85rem", color: "#b7c25e", fontFamily: "'Outfit', sans-serif", fontWeight: 600 }}>Ready to dispatch</div>
+                                <div style={{ fontSize: "2rem", color: "#f4ede6", fontWeight: 800, fontFamily: "'Outfit', sans-serif", lineHeight: 1 }}>7</div>
+                                <div style={{ fontSize: "0.85rem", color: "#b7c25e", fontFamily: "'Outfit', sans-serif", fontWeight: 600 }}>Tools in one platform</div>
                             </div>
                         </div>
 
-                        <div style={{ color: "#f4ede6", fontSize: "0.85rem", fontWeight: 700, fontFamily: "'Outfit', sans-serif", marginBottom: "14px", opacity: 0.9 }}>Pending Shipments</div>
+                        <div style={{ color: "#f4ede6", fontSize: "0.85rem", fontWeight: 700, fontFamily: "'Outfit', sans-serif", marginBottom: "14px", opacity: 0.9 }}>Feature Grid</div>
 
                         {/* Analytics Chart Widget */}
                         <div style={{ background: "rgba(244,237,230,0.02)", border: "1px solid rgba(244,237,230,0.06)", borderRadius: "16px", padding: "16px", marginBottom: "20px" }}>
-                            <div style={{ color: "#f4ede6", fontSize: "0.85rem", fontWeight: 700, fontFamily: "'Outfit', sans-serif", marginBottom: "4px" }}>Order Volume</div>
-                            <div style={{ color: "#b7c25e", fontSize: "0.65rem", fontFamily: "'Outfit', sans-serif", marginBottom: "16px" }}>+14% vs last week</div>
+                            <div style={{ color: "#f4ede6", fontSize: "0.85rem", fontWeight: 700, fontFamily: "'Outfit', sans-serif", marginBottom: "4px" }}>CI/CD Failure Analyzer</div>
+                            <div style={{ color: "#b7c25e", fontSize: "0.65rem", fontFamily: "'Outfit', sans-serif", marginBottom: "16px" }}>Finds failing steps and likely root causes.</div>
 
                             {/* CSS Bar Chart */}
                             <div style={{ display: "flex", alignItems: "flex-end", gap: "8px", height: "80px", borderBottom: "1px solid rgba(244,237,230,0.1)", paddingBottom: "4px" }}>
@@ -100,12 +100,12 @@ export default function DeliverySection() {
                         </div>
 
                         {/* Recent Incoming Orders Widget */}
-                        <div style={{ color: "#f4ede6", fontSize: "0.85rem", fontWeight: 700, fontFamily: "'Outfit', sans-serif", marginBottom: "12px", opacity: 0.9 }}>Incoming (WhatsApp)</div>
+                        <div style={{ color: "#f4ede6", fontSize: "0.85rem", fontWeight: 700, fontFamily: "'Outfit', sans-serif", marginBottom: "12px", opacity: 0.9 }}>Additional Capabilities</div>
 
                         <div style={{ display: "flex", flexDirection: "column", gap: "10px", overflowY: "auto", scrollbarWidth: "none" }}>
                             {[
-                                { id: "RX488", name: "Sunil V.", time: "2 min ago", amount: "₹450" },
-                                { id: "RX487", name: "Priya M.", time: "12 min ago", amount: "₹1,200" }
+                                { id: "F001", name: "AI Debug Assistant", time: "Explains failure context", amount: "Included" },
+                                { id: "F002", name: "Code Risk Insights", time: "Flags fragile paths", amount: "Included" }
                             ].map((order, i) => (
                                 <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", background: "rgba(244,237,230,0.02)", border: "1px solid rgba(244,237,230,0.06)", borderRadius: "14px", padding: "12px" }}>
                                     <div style={{ display: "flex", gap: "12px", alignItems: "center" }}>
@@ -134,10 +134,10 @@ export default function DeliverySection() {
                         {/* Top Bar over Map */}
                         <div style={{ padding: "44px 20px 20px", display: "flex", justifyContent: "space-between", alignItems: "center", background: "#f4ede6", zIndex: 10, borderBottom: "1px solid rgba(0,0,0,0.05)" }}>
                             <div>
-                                <h3 style={{ color: "#1a2a0a", fontSize: "1.1rem", fontWeight: 800, fontFamily: "'Outfit', sans-serif", margin: 0 }}>Driver Mode</h3>
+                                <h3 style={{ color: "#1a2a0a", fontSize: "1.1rem", fontWeight: 800, fontFamily: "'Outfit', sans-serif", margin: 0 }}>Issue Automation</h3>
                                 <div style={{ display: "flex", alignItems: "center", gap: "6px", marginTop: "4px" }}>
                                     <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#7dcf50", boxShadow: "0 0 8px #7dcf50" }} />
-                                    <p style={{ color: "#4d6628", fontSize: "0.75rem", margin: 0, fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>Online & Routing</p>
+                                    <p style={{ color: "#4d6628", fontSize: "0.75rem", margin: 0, fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>Live suggestions</p>
                                 </div>
                             </div>
                             <div style={{ width: "42px", height: "42px", borderRadius: "12px", background: "#1a2a0a", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 4px 12px rgba(0,0,0,0.15)" }}>
@@ -161,7 +161,7 @@ export default function DeliverySection() {
                             {/* Map UI Elements */}
                             <div style={{ position: "absolute", top: "20px", left: "20px", background: "white", padding: "8px 12px", borderRadius: "99px", display: "flex", gap: "6px", alignItems: "center", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}>
                                 <i className="ri-time-line" style={{ color: "#1a2a0a" }} />
-                                <span style={{ color: "#1a2a0a", fontSize: "0.75rem", fontWeight: 700, fontFamily: "'Outfit', sans-serif" }}>ETA 14 mins</span>
+                                <span style={{ color: "#1a2a0a", fontSize: "0.75rem", fontWeight: 700, fontFamily: "'Outfit', sans-serif" }}>Auto Issue Generator</span>
                             </div>
 
                             {/* Rider Pin */}
@@ -181,21 +181,21 @@ export default function DeliverySection() {
 
                             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "20px" }}>
                                 <div>
-                                    <div style={{ color: "#6b7a49", fontSize: "0.7rem", fontWeight: 700, fontFamily: "'Outfit', sans-serif", marginBottom: "6px", letterSpacing: "0.05em" }}>DELIVERING TO</div>
-                                    <div style={{ color: "#1a2a0a", fontSize: "1.3rem", fontWeight: 900, fontFamily: "'Outfit', sans-serif" }}>Ramesh K.</div>
+                                    <div style={{ color: "#6b7a49", fontSize: "0.7rem", fontWeight: 700, fontFamily: "'Outfit', sans-serif", marginBottom: "6px", letterSpacing: "0.05em" }}>API Usage Monitoring</div>
+                                    <div style={{ color: "#1a2a0a", fontSize: "1.3rem", fontWeight: 900, fontFamily: "'Outfit', sans-serif" }}>Dockerfile Optimization</div>
                                 </div>
                                 <div style={{ textAlign: "right" }}>
-                                    <div style={{ color: "#1a2a0a", fontSize: "1.3rem", fontWeight: 900, fontFamily: "'Outfit', sans-serif" }}>8 min</div>
-                                    <div style={{ color: "#6b7a49", fontSize: "0.75rem", fontWeight: 600, fontFamily: "'Outfit', sans-serif", marginTop: "2px" }}>2.4 km remaining</div>
+                                    <div style={{ color: "#1a2a0a", fontSize: "1.3rem", fontWeight: 900, fontFamily: "'Outfit', sans-serif" }}>Fast MTTR</div>
+                                    <div style={{ color: "#6b7a49", fontSize: "0.75rem", fontWeight: 600, fontFamily: "'Outfit', sans-serif", marginTop: "2px" }}>Built for developers</div>
                                 </div>
                             </div>
 
                             <div style={{ display: "flex", gap: "10px", marginBottom: "24px" }}>
                                 <button style={{ flex: 1, background: "rgba(107,122,73,0.08)", color: "#1a2a0a", border: "1px solid rgba(107,122,73,0.15)", padding: "12px", borderRadius: "12px", fontSize: "0.85rem", fontWeight: 700, fontFamily: "'Outfit', sans-serif", display: "flex", justifyContent: "center", alignItems: "center", gap: "8px", cursor: "pointer" }}>
-                                    <i className="ri-phone-fill" style={{ color: "#4d6628" }} /> Call
+                                    <i className="ri-github-fill" style={{ color: "#4d6628" }} /> Connect GitHub
                                 </button>
                                 <button style={{ flex: 1, background: "rgba(107,122,73,0.08)", color: "#1a2a0a", border: "1px solid rgba(107,122,73,0.15)", padding: "12px", borderRadius: "12px", fontSize: "0.85rem", fontWeight: 700, fontFamily: "'Outfit', sans-serif", display: "flex", justifyContent: "center", alignItems: "center", gap: "8px", cursor: "pointer" }}>
-                                    <i className="ri-message-2-fill" style={{ color: "#4d6628" }} /> Message
+                                    <i className="ri-play-circle-fill" style={{ color: "#4d6628" }} /> Try Demo
                                 </button>
                             </div>
 
@@ -204,7 +204,7 @@ export default function DeliverySection() {
                                 <div style={{ width: "48px", height: "48px", background: "#ffffff", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 2px 8px rgba(0,0,0,0.15)" }}>
                                     <i className="ri-arrow-right-double-line" style={{ color: "#7dcf50", fontSize: "1.5rem" }} />
                                 </div>
-                                <span style={{ color: "#ffffff", fontSize: "0.95rem", fontWeight: 800, fontFamily: "'Outfit', sans-serif", marginLeft: "30px", letterSpacing: "0.02em" }}>Swipe to Complete</span>
+                                <span style={{ color: "#ffffff", fontSize: "0.95rem", fontWeight: 800, fontFamily: "'Outfit', sans-serif", marginLeft: "30px", letterSpacing: "0.02em" }}>Start Debugging Smarter Today</span>
                             </div>
                         </div>
                     </div>

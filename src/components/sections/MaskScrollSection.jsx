@@ -52,7 +52,7 @@ export default function MaskScrollSection() {
                         className="w-[100vw] text-right pr-[8vw] font-outfit whitespace-nowrap text-[#6B7A49]"
                         style={{ fontSize: "5vw", fontWeight: 700 }}
                     >
-                        For Better Pharmacies. For Healthier
+                        Not Just Monitoring. Understanding
                     </span>
 
                     {/* Visual Solid Logo perfectly sitting in the gap */}
@@ -77,7 +77,7 @@ export default function MaskScrollSection() {
                         className="w-[100vw] text-left pl-[8vw] font-outfit whitespace-nowrap text-[#6B7A49]"
                         style={{ fontSize: "5vw", fontWeight: 700 }}
                     >
-                        Patients.
+                        Every Failure.
                     </span>
                 </div>
             </div>

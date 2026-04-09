@@ -10,27 +10,27 @@ import Logo3DFooter from "../effects/Logo3DFooter";
 
 const NAV_COLS = [
     {
+        heading: "Product",
+        links: [
+            { name: "Overview", href: "#features-section" },
+            { name: "How it works", href: "#whatsapp-section" },
+            { name: "Product preview", href: "#dashboard-section" },
+            { name: "Why BugSentry", href: "#delivery-section" },
+        ],
+    },
+    {
         heading: "Features",
         links: [
-            { name: "WhatsApp Orders", href: "#whatsapp-section" },
-            { name: "Telegram Orders", href: "#whatsapp-section" },
-            { name: "Voice AI", href: "#sms-voice-section" },
-            { name: "Prescription Verification", href: "#delivery-section" },
+            { name: "CI/CD Failure Analyzer", href: "#delivery-section" },
+            { name: "Deployment Crash Detection", href: "#dashboard-section" },
+            { name: "AI Debug Assistant", href: "#whatsapp-section" },
+            { name: "Code Risk Insights", href: "#features-section" },
         ],
     },
     {
-        heading: "Platform",
+        heading: "Resources",
         links: [
-            { name: "Pharmacist Dashboard", href: "#dashboard-section" },
-            { name: "Delivery Module", href: "#delivery-section" },
-            { name: "Analytics", href: "#dashboard-section" },
-            { name: "Inventory", href: "#features-section" },
-        ],
-    },
-    {
-        heading: "Company",
-        links: [
-            { name: "About Us", href: "#" },
+            { name: "Docs", href: "#footer-section" },
             { name: "Contact", href: "#footer-section" },
         ],
     },
@@ -81,14 +81,14 @@ export default function FooterSection() {
                     <p style={{ ...TEXT, fontSize: "0.62rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", opacity: 0.5, margin: "0 0 12px", lineHeight: 1.6 }}>
                         IF YOU HAVE ANY QUESTIONS<br />FEEL FREE TO CONTACT US:
                     </p>
-                    <a href="mailto:samaypowade1@gmail" style={{
+                    <a href="mailto:contact@bugsentry.com" style={{
                         ...TEXT, fontSize: "clamp(0.9rem, 1.8vw, 1.4rem)", fontWeight: 700, textDecoration: "none",
                         display: "block", marginBottom: "28px", transition: "opacity 0.2s",
                     }}
                         onMouseEnter={e => e.currentTarget.style.opacity = 0.65}
                         onMouseLeave={e => e.currentTarget.style.opacity = 1}
                     >
-                        samaypowade1@gmail
+                        contact@bugsentry.com
                     </a>
 
                     <a href="https://www.linkedin.com/in/samay-p-103259269/" target="_blank" style={{ ...TEXT, fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", textDecoration: "none", opacity: 0.55, transition: "opacity 0.2s" }}
@@ -116,7 +116,7 @@ export default function FooterSection() {
 
             {/* ── Bottom bar ── */}
             <div className="flex flex-col md:flex-row justify-between items-center gap-3 border-t border-[#2d3d1a]/20 px-6 py-5 md:px-[6vw] relative z-10">
-                <p style={{ ...TEXT, fontSize: "0.65rem", opacity: 0.45, margin: 0 }}>© 2025 Sanjeevani Inc.</p>
+                <p style={{ ...TEXT, fontSize: "0.65rem", opacity: 0.45, margin: 0 }}>© 2026 BugSentry</p>
                 <p style={{ ...TEXT, fontSize: "0.65rem", opacity: 0.45, margin: 0 }}>TERMS OF USE</p>
             </div>
         </section >

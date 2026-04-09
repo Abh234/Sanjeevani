@@ -55,7 +55,7 @@ export default function FeaturesSection() {
                         color: '#f4ede6', fontSize: '0.7rem', fontWeight: 700,
                         letterSpacing: '0.18em', textTransform: 'uppercase',
                         margin: 0, fontFamily: "'Outfit', sans-serif", opacity: 0.72,
-                    }}>PHARMA, REINVENTED.</p>
+                    }}>MEET BUGSENTRY</p>
 
                     {/* Brand name */}
                     <div style={{ margin: '6px 0 2px' }}>
@@ -63,7 +63,7 @@ export default function FeaturesSection() {
                             fontFamily: "'Outfit', sans-serif", fontWeight: 900,
                             fontSize: 'clamp(1rem, 2vw, 1.5rem)',
                             color: '#b7c25e', letterSpacing: '0.04em',
-                        }}>Sanjeevani</span>
+                        }}>BugSentry</span>
                         <sup style={{ fontSize: '0.5em', color: '#b7c25e', opacity: 0.7, marginLeft: '2px', verticalAlign: 'super' }}>™</sup>
                     </div>
 
@@ -72,9 +72,9 @@ export default function FeaturesSection() {
                         fontSize: 'clamp(2rem, 4vw, 3.6rem)',
                         color: '#f4ede6', margin: 0, lineHeight: 1.05, letterSpacing: '-0.02em',
                     }}>
-                        Pharmacy Care<br />
+                        Stop Guessing.<br />
                         <span style={{ fontFamily: "Georgia, serif", fontStyle: 'italic', fontWeight: 700, color: '#c8dfa0' }}>
-                            Through Conversation
+                            Start Fixing.
                         </span>
                     </h2>
 
@@ -82,15 +82,16 @@ export default function FeaturesSection() {
                         color: '#f4ede6', opacity: 0.75, fontSize: '1rem', fontWeight: 400,
                         lineHeight: 1.7, fontFamily: "'Outfit', sans-serif", maxWidth: '460px', margin: 0,
                     }}>
-                        Patients simply message the pharmacy on WhatsApp or Telegram. The AI understands their request, verifies prescriptions, confirms the order, and sends real-time updates — all within the chat.
+                        BugSentry analyzes your GitHub repos, explains CI/CD failures, and tells you exactly how to fix them. Built for fast-moving engineering teams that need clarity in seconds.
                     </p>
 
                     {/* Step pills */}
                     <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '10px', paddingTop: '8px' }}>
                         {[
-                            { label: 'Speak or Message', icon: 'ri-message-3-line' },
-                            { label: 'AI Verifies', icon: 'ri-shield-check-line' },
-                            { label: 'Order Completed', icon: 'ri-check-double-line' },
+                            { label: 'Connect GitHub', icon: 'ri-github-fill' },
+                            { label: 'Analyze repository', icon: 'ri-search-eye-line' },
+                            { label: 'Get AI insights', icon: 'ri-robot-2-line' },
+                            { label: 'Fix instantly', icon: 'ri-tools-line' },
                         ].map((step, idx, arr) => (
                             <React.Fragment key={step.label}>
                                 <span style={{

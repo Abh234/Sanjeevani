@@ -179,7 +179,7 @@ export default function DemoModal({ isOpen, onClose }) {
                                 justifyContent: "center",
                                 boxShadow: "0 4px 15px rgba(183, 194, 94, 0.3)"
                             }}>
-                                <i className="ri-medicine-bag-line" style={{ color: "#0a1103", fontSize: "1.1rem" }} />
+                                <i className="ri-code-s-slash-line" style={{ color: "#0a1103", fontSize: "1.1rem" }} />
                             </div>
                             <span style={{
                                 fontFamily: "'Outfit', sans-serif",
@@ -188,7 +188,7 @@ export default function DemoModal({ isOpen, onClose }) {
                                 color: "#b7c25e",
                                 letterSpacing: "0.02em"
                             }}>
-                                Sanjeevani
+                                BugSentry
                             </span>
                         </div>
                     </div>
@@ -203,7 +203,7 @@ export default function DemoModal({ isOpen, onClose }) {
                             letterSpacing: "-0.02em",
                             lineHeight: 1.2
                         }}>
-                            Book Your Free Demo
+                            See BugSentry in Action
                         </h2>
                     </div>
 
@@ -215,7 +215,7 @@ export default function DemoModal({ isOpen, onClose }) {
                             fontFamily: "'Outfit', sans-serif",
                             lineHeight: 1.4
                         }}>
-                            See how Sanjeevani can transform your pharmacy. Get a personalized walkthrough with our team.
+                            See how BugSentry turns noisy CI/CD logs into clear explanations and actionable fixes. Get a short walkthrough tailored to your stack.
                         </p>
                     </div>
 
@@ -250,7 +250,7 @@ export default function DemoModal({ isOpen, onClose }) {
                                     textTransform: "uppercase",
                                     marginBottom: "6px",
                                     fontFamily: "'Outfit', sans-serif"
-                                }}>Pharmacy Name</label>
+                                }}>Company / Team</label>
                                 <input
                                     type="text"
                                     className="demo-input"
@@ -322,7 +322,7 @@ export default function DemoModal({ isOpen, onClose }) {
                         </div>
 
                         <button type="submit" className="demo-submit-btn demo-btn" style={{ marginTop: "4px" }}>
-                            <span>Schedule Demo</span>
+                            <span>Try Demo</span>
                             <i className="ri-arrow-right-line" style={{ marginLeft: "8px" }} />
                         </button>
                     </form>
@@ -342,7 +342,7 @@ export default function DemoModal({ isOpen, onClose }) {
                             fontSize: "0.75rem",
                             fontFamily: "'Outfit', sans-serif"
                         }}>
-                            No credit card required • Free consultation
+                            No credit card required • Built for engineering teams
                         </span>
                     </div>
                 </div>
