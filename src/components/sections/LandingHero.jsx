@@ -1,6 +1,7 @@
 import bgImage from "../../assets/image/bg_green.png";
 import HoverGrid from "../effects/HoverGrid";
 import Logo3D from "../effects/Logo3D";
+import AnimatedDots from "../effects/AnimatedDots";
 
 /**
  * LandingHero — LAYER 1 (z-10)
@@ -14,12 +15,12 @@ export default function LandingHero({ onMenuClick }) {
     return (
         <div
             className="landing-content absolute inset-0 z-10 overflow-hidden"
-            style={{ background: 'linear-gradient(to bottom, #2b3618 0%, #667440 40%, #707F48 75%, #8E956C 100%)' }}
+            style={{ background: 'linear-gradient(to bottom, #0a0a0a 0%, #111111 40%, #1a1a1a 75%, #222222 100%)' }}
         >
             <div className="main w-full h-full rotate-[-10deg] scale-[1.7] origin-center">
                 <div
                     className="landing w-full h-full relative"
-                    style={{ background: 'linear-gradient(to bottom, #2b3618 0%, #667440 40%, #707F48 75%, #8E956C 100%)' }}
+                    style={{ background: 'linear-gradient(to bottom, #0a0a0a 0%, #111111 40%, #1a1a1a 75%, #222222 100%)' }}
                 >
                     {/* Soft glow orb — brighter toward bottom-center */}
                     <div style={{
@@ -81,6 +82,7 @@ export default function LandingHero({ onMenuClick }) {
             </div>
 
             {/* HoverGrid — outside .main so CSS transforms don't skew mouse coords */}
+            <AnimatedDots />
             <HoverGrid />
 
             {/* ── 3D Logo — right side, outside .main transform ── */}

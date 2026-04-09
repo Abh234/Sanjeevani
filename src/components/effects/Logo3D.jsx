@@ -71,19 +71,19 @@ export default function Logo3D({ style, color = '#1a1a1a', highlightColor = '#bb
 
         /* ── Material: dynamic color with slight sheen ── */
         const mat = new THREE.MeshStandardMaterial({
-            color: new THREE.Color(color),
+            color: new THREE.Color('#ffffff'), // Overridden to white
             metalness: 0.6,
-            roughness: 0.45,                     // tightened roughness for a cleaner, polished gleam
+            roughness: 0.45,
         });
 
-        /* ── Highlight/specular accent layer (thinner clone, cream/highlight match) ── */
+        /* ── Highlight/specular accent layer ── */
         const matHighlight = new THREE.MeshStandardMaterial({
-            color: new THREE.Color(highlightColor),
+            color: new THREE.Color('#ffffff'),
             metalness: 0.9,
             roughness: 0.15,
             transparent: true,
             opacity: 0.4,
-            blending: THREE.AdditiveBlending,    // Adds a richer, glowing specular highlight
+            blending: THREE.AdditiveBlending,
         });
 
         /* ── Logo group: 6 petals rotated every 60° ── */
@@ -146,8 +146,8 @@ export default function Logo3D({ style, color = '#1a1a1a', highlightColor = '#bb
         <div
             ref={mountRef}
             style={{
-                width: 'min(500px, 80vw)',
-                height: 'min(500px, 80vw)',
+                width: 'min(600px, 85vw)',
+                height: 'min(600px, 85vw)',
                 position: 'absolute',
                 left: '50%',
                 top: '5%', // Default to top instead of bottom

@@ -23,9 +23,9 @@ export default function HoverGrid() {
         const PEAK = 1.0;  // internal peak value
         const FADE = 0.82; // per-frame decay for fading-out cells
 
-        // #B7C25E Moss Green — used across the full gradient background
-        const LIGHT = { r: 183, g: 194, b: 94, a: 0.68 };
-        const DARK = { r: 183, g: 194, b: 94, a: 0.68 };
+        // White hover
+        const LIGHT = { r: 255, g: 255, b: 255, a: 0.68 };
+        const DARK = { r: 255, g: 255, b: 255, a: 0.68 };
         /* ─────────────────────────────────────────────────────────── */
 
         const cells = new Map();  // "col,row" → rawAlpha (0..1)
