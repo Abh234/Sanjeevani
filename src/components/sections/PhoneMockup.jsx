@@ -68,53 +68,69 @@ export default function PhoneMockup() {
                     {/* Channel notification cards */}
                     <div style={{ flex: 1, overflowY: 'hidden', padding: '10px 12px', display: 'flex', flexDirection: 'column', gap: '9px' }}>
 
-                        {/* WhatsApp */}
-                        <div style={{ background: 'rgba(37,211,102,0.12)', border: '1px solid rgba(37,211,102,0.30)', borderRadius: '16px', padding: '11px 14px', display: 'flex', alignItems: 'center', gap: '11px' }}>
-                            <div style={{ width: '38px', height: '38px', borderRadius: '12px', flexShrink: 0, background: 'linear-gradient(135deg, #25D366, #128C7E)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 12px rgba(37,211,102,0.4)' }}>
-                                <i className="ri-whatsapp-line" style={{ color: '#fff', fontSize: '1.2rem' }} />
+                        {/* GitHub */}
+                        <div style={{ background: 'rgba(24,23,23,0.12)', border: '1px solid rgba(24,23,23,0.30)', borderRadius: '16px', padding: '11px 14px', display: 'flex', alignItems: 'center', gap: '11px' }}>
+                            <div style={{ width: '38px', height: '38px', borderRadius: '12px', flexShrink: 0, background: '#181717', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 12px rgba(24,23,23,0.4)', border: '1px solid rgba(255,255,255,0.1)' }}>
+                                <i className="ri-github-fill" style={{ color: '#fff', fontSize: '1.2rem' }} />
                             </div>
                             <div style={{ flex: 1, minWidth: 0 }}>
                                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                                    <span style={{ color: '#25D366', fontSize: '0.72rem', fontWeight: 700, fontFamily: "'Outfit', sans-serif" }}>CI/CD</span>
+                                    <span style={{ color: '#f4ede6', fontSize: '0.72rem', fontWeight: 700, fontFamily: "'Outfit', sans-serif" }}>GitHub</span>
                                     <span style={{ color: '#f4ede6', opacity: 0.4, fontSize: '0.58rem' }}>now</span>
                                 </div>
                                 <p style={{ color: '#f4ede6', opacity: 0.8, fontSize: '0.68rem', margin: '2px 0 0', lineHeight: 1.4, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                                    Build failed: migration step timed out.
+                                    Build failed in auth-service ⚠️
                                 </p>
                             </div>
                         </div>
 
-                        {/* Telegram */}
-                        <div style={{ background: 'rgba(41,182,246,0.10)', border: '1px solid rgba(41,182,246,0.28)', borderRadius: '16px', padding: '11px 14px', display: 'flex', alignItems: 'center', gap: '11px' }}>
-                            <div style={{ width: '38px', height: '38px', borderRadius: '12px', flexShrink: 0, background: 'linear-gradient(135deg, #29B6F6, #0288D1)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 12px rgba(41,182,246,0.4)' }}>
-                                <i className="ri-telegram-line" style={{ color: '#fff', fontSize: '1.2rem' }} />
+                        {/* AI Insight */}
+                        <div style={{ background: 'rgba(155,89,182,0.10)', border: '1px solid rgba(155,89,182,0.28)', borderRadius: '16px', padding: '11px 14px', display: 'flex', alignItems: 'center', gap: '11px' }}>
+                            <div style={{ width: '38px', height: '38px', borderRadius: '12px', flexShrink: 0, background: 'linear-gradient(135deg, #9b59b6, #8e44ad)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 12px rgba(155,89,182,0.4)' }}>
+                                <i className="ri-brain-line" style={{ color: '#fff', fontSize: '1.2rem' }} />
                             </div>
                             <div style={{ flex: 1, minWidth: 0 }}>
                                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                                    <span style={{ color: '#29B6F6', fontSize: '0.72rem', fontWeight: 700, fontFamily: "'Outfit', sans-serif" }}>Deploy</span>
-                                    <span style={{ color: '#f4ede6', opacity: 0.4, fontSize: '0.58rem' }}>1m ago</span>
+                                    <span style={{ color: '#9b59b6', fontSize: '0.72rem', fontWeight: 700, fontFamily: "'Outfit', sans-serif" }}>AI Insight</span>
                                 </div>
                                 <p style={{ color: '#f4ede6', opacity: 0.8, fontSize: '0.68rem', margin: '2px 0 0', lineHeight: 1.4, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                                    Root cause found in `Dockerfile` layer cache.
+                                    Missing dependency detected — fix suggested
                                 </p>
                             </div>
                         </div>
 
-                        {/* Voice Call */}
-                        <div style={{ background: 'rgba(244,237,230,0.07)', border: '1px solid rgba(244,237,230,0.18)', borderRadius: '16px', padding: '11px 14px', display: 'flex', alignItems: 'center', gap: '11px' }}>
-                            <div style={{ width: '38px', height: '38px', borderRadius: '12px', flexShrink: 0, background: 'linear-gradient(135deg, #607a30, #3d5220)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 12px rgba(96,122,48,0.4)' }}>
-                                <i className="ri-phone-line" style={{ color: '#f4ede6', fontSize: '1.2rem' }} />
+                        {/* Prediction Engine */}
+                        <div style={{ background: 'rgba(231,76,60,0.1)', border: '1px solid rgba(231,76,60,0.2)', borderRadius: '16px', padding: '11px 14px', display: 'flex', alignItems: 'center', gap: '11px' }}>
+                            <div style={{ width: '38px', height: '38px', borderRadius: '12px', flexShrink: 0, background: 'linear-gradient(135deg, #e74c3c, #c0392b)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 12px rgba(231,76,60,0.4)' }}>
+                                <i className="ri-radar-line" style={{ color: '#f4ede6', fontSize: '1.2rem' }} />
                             </div>
                             <div style={{ flex: 1, minWidth: 0 }}>
                                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                                    <span style={{ color: '#f4ede6', fontSize: '0.72rem', fontWeight: 700, fontFamily: "'Outfit', sans-serif" }}>AI Assistant</span>
-                                    <span style={{ background: 'rgba(125,207,80,0.2)', color: '#7dcf50', fontSize: '0.56rem', fontWeight: 700, padding: '2px 7px', borderRadius: '99px', border: '1px solid rgba(125,207,80,0.3)' }}>LIVE</span>
+                                    <span style={{ color: '#e74c3c', fontSize: '0.72rem', fontWeight: 700, fontFamily: "'Outfit', sans-serif" }}>Prediction Engine</span>
+                                    <span style={{ color: '#f4ede6', opacity: 0.4, fontSize: '0.58rem' }}>just now</span>
                                 </div>
-                                <p style={{ color: '#f4ede6', opacity: 0.8, fontSize: '0.68rem', margin: '2px 0 0', lineHeight: 1.4 }}>
-                                    Suggested fix PR + issue draft ready.
+                                <p style={{ color: '#f4ede6', opacity: 0.8, fontSize: '0.68rem', margin: '2px 0 0', lineHeight: 1.4, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                                    High failure risk in payment module 🚨
                                 </p>
                             </div>
                         </div>
+
+                        {/* System Health */}
+                        <div style={{ background: 'rgba(46,204,113,0.1)', border: '1px solid rgba(46,204,113,0.2)', borderRadius: '16px', padding: '11px 14px', display: 'flex', alignItems: 'center', gap: '11px' }}>
+                            <div style={{ width: '38px', height: '38px', borderRadius: '12px', flexShrink: 0, background: 'linear-gradient(135deg, #2ecc71, #27ae60)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 12px rgba(46,204,113,0.4)' }}>
+                                <i className="ri-heart-pulse-line" style={{ color: '#f4ede6', fontSize: '1.2rem' }} />
+                            </div>
+                            <div style={{ flex: 1, minWidth: 0 }}>
+                                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                                    <span style={{ color: '#2ecc71', fontSize: '0.72rem', fontWeight: 700, fontFamily: "'Outfit', sans-serif" }}>System Health</span>
+                                    <span style={{ background: 'rgba(46,204,113,0.2)', color: '#2ecc71', fontSize: '0.56rem', fontWeight: 700, padding: '2px 7px', borderRadius: '99px', border: '1px solid rgba(46,204,113,0.3)' }}>LIVE</span>
+                                </div>
+                                <p style={{ color: '#f4ede6', opacity: 0.8, fontSize: '0.68rem', margin: '2px 0 0', lineHeight: 1.4 }}>
+                                    Health score: 72%
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
 
                     {/* Home bar */}
@@ -125,46 +141,46 @@ export default function PhoneMockup() {
 
                 {/* ── Floating 3D channel icon badges with text ── */}
 
-                {/* WhatsApp — top-right offset */}
+                {/* GitHub — top-right offset */}
                 <div className="hidden sm:flex" style={{
                     position: 'absolute', right: '-80px', top: '50px', zIndex: 20,
                     height: '50px', padding: '0 20px 0 14px', borderRadius: '18px',
-                    background: 'linear-gradient(135deg, #25D366, #128C7E)',
+                    background: '#181717',
                     alignItems: 'center', justifyContent: 'center', gap: '8px',
-                    boxShadow: '0 15px 35px rgba(37,211,102,0.4), inset 0 3px 6px rgba(255,255,255,0.5), inset 0 -4px 10px rgba(0,0,0,0.25)',
+                    boxShadow: '0 15px 35px rgba(24,23,23,0.4), inset 0 3px 6px rgba(255,255,255,0.2), inset 0 -4px 10px rgba(0,0,0,0.25)',
                     border: '1px solid rgba(255,255,255,0.4)',
                     transform: 'rotate(4deg)'
                 }}>
-                    <i className="ri-whatsapp-line" style={{ color: '#fff', fontSize: '1.4rem', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))' }} />
-                    <span style={{ color: '#fff', fontWeight: 700, fontFamily: "'Outfit', sans-serif", fontSize: '0.85rem', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>CI/CD Analyzer</span>
+                    <i className="ri-github-fill" style={{ color: '#fff', fontSize: '1.4rem', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))' }} />
+                    <span style={{ color: '#fff', fontWeight: 700, fontFamily: "'Outfit', sans-serif", fontSize: '0.85rem', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>GitHub Action</span>
                 </div>
 
-                {/* Telegram — top-left offset */}
+                {/* AI Fix — top-left offset */}
                 <div className="hidden sm:flex" style={{
                     position: 'absolute', left: '-100px', top: '160px', zIndex: 20,
                     height: '50px', padding: '0 20px 0 14px', borderRadius: '20px',
-                    background: 'linear-gradient(135deg, #29B6F6, #0288D1)',
+                    background: 'linear-gradient(135deg, #9b59b6, #8e44ad)',
                     alignItems: 'center', justifyContent: 'center', gap: '8px',
-                    boxShadow: '0 15px 35px rgba(41,182,246,0.4), inset 0 3px 6px rgba(255,255,255,0.5), inset 0 -4px 10px rgba(0,0,0,0.25)',
+                    boxShadow: '0 15px 35px rgba(155,89,182,0.4), inset 0 3px 6px rgba(255,255,255,0.5), inset 0 -4px 10px rgba(0,0,0,0.25)',
                     border: '1px solid rgba(255,255,255,0.4)',
                     transform: 'rotate(-6deg)'
                 }}>
-                    <i className="ri-telegram-line" style={{ color: '#fff', fontSize: '1.4rem', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))' }} />
-                    <span style={{ color: '#fff', fontWeight: 700, fontFamily: "'Outfit', sans-serif", fontSize: '0.85rem', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>Deploy Detection</span>
+                    <i className="ri-asterisk" style={{ color: '#fff', fontSize: '1.4rem', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))' }} />
+                    <span style={{ color: '#fff', fontWeight: 700, fontFamily: "'Outfit', sans-serif", fontSize: '0.85rem', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>AI Debugger</span>
                 </div>
 
-                {/* Phone Call — bottom-left offset */}
+                {/* Health Check — bottom-left offset */}
                 <div className="hidden sm:flex" style={{
                     position: 'absolute', left: '-80px', bottom: '60px', zIndex: 20,
                     height: '50px', padding: '0 20px 0 14px', borderRadius: '16px',
-                    background: 'linear-gradient(135deg, #607a30, #3d5220)',
+                    background: 'linear-gradient(135deg, #2ecc71, #27ae60)',
                     alignItems: 'center', justifyContent: 'center', gap: '8px',
-                    boxShadow: '0 15px 35px rgba(96,122,48,0.4), inset 0 3px 6px rgba(255,255,255,0.3), inset 0 -4px 10px rgba(0,0,0,0.25)',
+                    boxShadow: '0 15px 35px rgba(46,204,113,0.4), inset 0 3px 6px rgba(255,255,255,0.3), inset 0 -4px 10px rgba(0,0,0,0.25)',
                     border: '1px solid rgba(255,255,255,0.2)',
                     transform: 'rotate(5deg)'
                 }}>
-                    <i className="ri-phone-fill" style={{ color: '#f4ede6', fontSize: '1.4rem', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))' }} />
-                    <span style={{ color: '#f4ede6', fontWeight: 700, fontFamily: "'Outfit', sans-serif", fontSize: '0.85rem', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>Fix Suggestions</span>
+                    <i className="ri-heart-pulse-fill" style={{ color: '#f4ede6', fontSize: '1.4rem', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))' }} />
+                    <span style={{ color: '#f4ede6', fontWeight: 700, fontFamily: "'Outfit', sans-serif", fontSize: '0.85rem', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>Health Monitor</span>
                 </div>
             </div>
         </div>

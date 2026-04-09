@@ -122,7 +122,7 @@ export default function Sidebar({ isOpen, onClose }) {
                 <div ref={footerRef} style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", opacity: 0 }}>
                     <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
                         <span style={{ color: "#f4ede6", opacity: 0.45, fontSize: "0.6rem", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", fontFamily: "'Outfit', sans-serif" }}>
-                            Pharma, Reinvented.
+                            Engineering Intelligence.
                         </span>
                         <a
                             href="mailto:hello@bugsentry.com"

@@ -3,27 +3,37 @@
  * Brand story, mission pillars, and key stats.
  */
 const STATS = [
-    { value: "10K+", label: "Patients Served" },
-    { value: "50+", label: "Pharmacies Online" },
-    { value: "4", label: "AI Channels" },
-    { value: "24 / 7", label: "Always On" },
+    { value: "10M+", label: "Lines Analyzed" },
+    { value: "99.9%", label: "Detection Accuracy" },
+    { value: "500ms", label: "Scan Time" },
+    { value: "24 / 7", label: "Continuous Monitoring" },
 ];
 
 const PILLARS = [
     {
-        icon: "ri-heart-pulse-line",
-        title: "Patient-First",
-        body: "Every interaction is designed around the patient — fast, intuitive, and empathetic.",
+        icon: "ri-code-box-line",
+        title: "Understands your codebase",
+        body: "Instantly maps your repository architecture and dependencies.",
     },
     {
-        icon: "ri-robot-2-line",
-        title: "AI-Native",
-        body: "Built from the ground up with conversational AI — not bolted on as an afterthought.",
+        icon: "ri-git-merge-line",
+        title: "Analyzes CI/CD failures",
+        body: "Interprets broken builds and gives you plain-English root causes.",
     },
     {
-        icon: "ri-lock-2-line",
-        title: "Secure & Compliant",
-        body: "End-to-end encrypted, HIPAA-aligned, prescription-verified at every step.",
+        icon: "ri-shield-cross-line",
+        title: "Detects risky modules",
+        body: "Identifies fragile areas of code that have a high probability of breaking.",
+    },
+    {
+        icon: "ri-radar-line",
+        title: "Predicts future issues",
+        body: "Forecasts crashes up to 90 days in advance using predictive models.",
+    },
+    {
+        icon: "ri-check-double-line",
+        title: "Suggests real fixes",
+        body: "Automatically opens PRs and issues with production-ready code.",
     },
 ];
 
@@ -55,21 +65,21 @@ export default function AboutSection() {
                 color: "#b7c25e", fontSize: "0.7rem", fontWeight: 700,
                 letterSpacing: "0.24em", textTransform: "uppercase",
                 fontFamily: "'Outfit', sans-serif", margin: "0 0 18px",
-            }}>Who We Are</p>
+            }}>Engineering Intelligence</p>
 
             {/* Hero headline */}
             <h2 className="about-anim" style={{
                 fontFamily: "'Outfit', sans-serif", fontWeight: 900,
-                fontSize: "clamp(3rem, 7vw, 7rem)",
+                fontSize: "clamp(3rem, 5vw, 6rem)",
                 color: "#f4ede6", margin: "0 0 28px",
                 lineHeight: 0.95, letterSpacing: "-0.03em",
                 maxWidth: "780px",
             }}>
-                BugSentry<br />
+                From Code to Clarity<br />
                 <span style={{
                     fontFamily: "Georgia, serif", fontStyle: "italic",
                     fontWeight: 400, fontSize: "0.52em", color: "#c8dfa0",
-                }}>— Pharmacy, Reimagined.</span>
+                }}>— In Seconds.</span>
             </h2>
 
             {/* Body text */}
@@ -78,9 +88,7 @@ export default function AboutSection() {
                 fontSize: "1.05rem", fontWeight: 400, lineHeight: 1.75,
                 fontFamily: "'Outfit', sans-serif", maxWidth: "580px", margin: "0 0 64px",
             }}>
-                We're building the infrastructure that lets any pharmacy reach every
-                patient — through WhatsApp, voice calls, or Telegram — powered by
-                an AI that speaks the patient's language.
+                BugSentry connects directly to your repositories and gives you a panoramic view of your engineering health. All in one place.
             </p>
 
             {/* Pillars */}

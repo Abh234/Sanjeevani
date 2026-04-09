@@ -1,4 +1,4 @@
-import bgImage from "../../assets/image/bg_green.png";
+import bgImage from "../../assets/image/devops_hero_bg.png";
 import HoverGrid from "../effects/HoverGrid";
 import Logo3D from "../effects/Logo3D";
 import AnimatedDots from "../effects/AnimatedDots";
@@ -66,6 +66,14 @@ export default function LandingHero({ onMenuClick }) {
                         }}>
                             BugSentry
                         </h1>
+                        <div style={{ marginTop: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                            <h2 style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 'clamp(1.2rem, 3vw, 2.5rem)', color: '#c8dfa0', margin: '0 0 10px 0' }}>
+                                Engineering Intelligence — Built for Speed
+                            </h2>
+                            <p style={{ fontFamily: "'Outfit', sans-serif", fontSize: 'clamp(0.9rem, 1.5vw, 1.25rem)', color: '#aaaaaa', maxWidth: '600px', margin: 0, lineHeight: 1.5 }}>
+                                Analyze your GitHub repositories, detect failures before they happen, and fix issues instantly with AI.
+                            </p>
+                        </div>
                     </div>
 
                     {/* Scroll hint */}
@@ -87,13 +95,13 @@ export default function LandingHero({ onMenuClick }) {
             {/* ── 3D Logo — right side, outside .main transform ── */}
             {/* Radial glow behind the 3D model */}
             <div style={{
-                position: 'absolute', left: '50%', bottom: '-12%',
+                position: 'absolute', left: '50%', top: '45%',
                 transform: 'translateX(-50%)',
-                width: 'min(530px, 80vw)', height: 'min(530px, 80vw)',
+                width: 'min(500px, 75vw)', height: 'min(500px, 75vw)',
                 borderRadius: '50%', zIndex: 14, pointerEvents: 'none',
                 background: 'radial-gradient(ellipse at center, rgba(255,255,255,0.08) 0%, transparent 72%)',
             }} />
-            <Logo3D style={{ top: 'auto', bottom: '-6%' }} />
+            <Logo3D style={{ top: '43%', bottom: 'auto', width: 'min(480px, 75vw)', height: 'min(480px, 75vw)' }} />
         </div>
     );
 }

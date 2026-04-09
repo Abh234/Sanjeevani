@@ -1,6 +1,6 @@
-import React from "react";
-import PhoneMockup from "./PhoneMockup";
-import bgImage from "../../assets/image/bg_green.png";
+import React, { useEffect, useRef } from "react";
+import bgImage from "../../assets/image/devops_hero_bg.png";
+import devopsUiImage from "../../assets/image/feature_devops_ui.png";
 
 /**
  * FeaturesSection — LAYER 2 (z-[60])
@@ -11,6 +11,7 @@ import bgImage from "../../assets/image/bg_green.png";
  *  • Right PhoneMockup (phone frame + floating channel badges)
  */
 export default function FeaturesSection() {
+
     return (
         <div
             id="features-section"
@@ -55,7 +56,7 @@ export default function FeaturesSection() {
                         color: '#f4ede6', fontSize: '0.7rem', fontWeight: 700,
                         letterSpacing: '0.18em', textTransform: 'uppercase',
                         margin: 0, fontFamily: "'Outfit', sans-serif", opacity: 0.72,
-                    }}>PHARMA, REINVENTED.</p>
+                    }}>ENGINEERING INTELLIGENCE</p>
 
                     {/* Brand name */}
                     <div style={{ margin: '6px 0 2px' }}>
@@ -71,9 +72,9 @@ export default function FeaturesSection() {
                         fontSize: 'clamp(2rem, 4vw, 3.6rem)',
                         color: '#f4ede6', margin: 0, lineHeight: 1.05, letterSpacing: '-0.02em',
                     }}>
-                        Pharmacy Care<br />
+                        AI-Powered DevOps<br />
                         <span style={{ fontFamily: "Georgia, serif", fontStyle: 'italic', fontWeight: 700, color: '#c8dfa0' }}>
-                            Through Conversation
+                            Through Intelligence
                         </span>
                     </h2>
 
@@ -81,15 +82,15 @@ export default function FeaturesSection() {
                         color: '#f4ede6', opacity: 0.75, fontSize: '1rem', fontWeight: 400,
                         lineHeight: 1.7, fontFamily: "'Outfit', sans-serif", maxWidth: '460px', margin: 0,
                     }}>
-                        Patients simply message the pharmacy on WhatsApp or Telegram. The AI understands their request, verifies prescriptions, confirms the order, and sends real-time updates — all within the chat.
+                        Developers connect their GitHub or GitLab repositories. BugSentry analyzes code changes, CI/CD failures, and system behavior — then explains problems, predicts risks, and suggests fixes in real time.
                     </p>
 
                     {/* Step pills */}
                     <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '10px', paddingTop: '8px' }}>
                         {[
-                            { label: 'Speak or Message', icon: 'ri-message-3-line' },
-                            { label: 'AI Verifies', icon: 'ri-shield-check-line' },
-                            { label: 'Order Completed', icon: 'ri-check-double-line' },
+                            { label: 'Connect Repo', icon: 'ri-github-fill' },
+                            { label: 'AI Analyzes Code', icon: 'ri-brain-line' },
+                            { label: 'Fix Instantly', icon: 'ri-check-double-line' },
                         ].map((step, idx, arr) => (
                             <React.Fragment key={step.label}>
                                 <span style={{
@@ -112,8 +113,23 @@ export default function FeaturesSection() {
                     </div>
                 </div>
 
-                {/* ── Right: Phone Mockup ── */}
-                <PhoneMockup />
+                {/* ── Right: Devops UI Image ── */}
+                <div 
+                    className="relative w-full max-w-[500px] mx-auto rounded-2xl overflow-hidden shadow-2xl border border-[rgba(255,255,255,0.05)]"
+                    style={{
+                        transformStyle: "preserve-3d",
+                        boxShadow: "0 30px 60px rgba(0,0,0,0.6), 0 0 40px rgba(183,194,94,0.1)"
+                    }}
+                >
+                    <img 
+                        src={devopsUiImage} 
+                        alt="BugSentry AI Context and Flow Dashboard" 
+                        className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700 ease-out"
+                    />
+                    
+                    {/* Subtle overlay glare */}
+                    <div className="absolute inset-0 pointer-events-none bg-gradient-to-tr from-transparent via-[rgba(255,255,255,0.02)] to-[rgba(255,255,255,0.06)] mix-blend-overlay"></div>
+                </div>
 
             </div>
         </div>
