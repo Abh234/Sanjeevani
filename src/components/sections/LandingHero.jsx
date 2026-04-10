@@ -1,6 +1,7 @@
-import bgImage from "../../assets/image/bg_green.png";
+import bgImage from "../../assets/image/devops_hero_bg.png";
 import HoverGrid from "../effects/HoverGrid";
 import Logo3D from "../effects/Logo3D";
+import AnimatedDots from "../effects/AnimatedDots";
 
 /**
  * LandingHero — LAYER 1 (z-10)
@@ -14,12 +15,12 @@ export default function LandingHero({ onMenuClick }) {
     return (
         <div
             className="landing-content absolute inset-0 z-10 overflow-hidden"
-            style={{ background: 'linear-gradient(to bottom, #2b3618 0%, #667440 40%, #707F48 75%, #8E956C 100%)' }}
+            style={{ background: 'linear-gradient(to bottom, #0a0a0a 0%, #111111 40%, #1a1a1a 75%, #222222 100%)' }}
         >
             <div className="main w-full h-full rotate-[-10deg] scale-[1.7] origin-center">
                 <div
                     className="landing w-full h-full relative"
-                    style={{ background: 'linear-gradient(to bottom, #2b3618 0%, #667440 40%, #707F48 75%, #8E956C 100%)' }}
+                    style={{ background: 'linear-gradient(to bottom, #0a0a0a 0%, #111111 40%, #1a1a1a 75%, #222222 100%)' }}
                 >
                     {/* Soft glow orb — brighter toward bottom-center */}
                     <div style={{
@@ -51,38 +52,28 @@ export default function LandingHero({ onMenuClick }) {
 
                     {/* Giant brand title */}
                     <div className="hero-text" style={{
-                        position: 'absolute', top: '5%', left: '5%',
+                        position: 'absolute', top: '5%', left: '0', width: '100%',
                         zIndex: 10,
                         transform: 'rotate(-8deg)',
-                        transformOrigin: 'left top',
+                        transformOrigin: 'center top',
                         opacity: 0.97,
+                        textAlign: 'center',
                     }}>
                         <h1 style={{
                             fontFamily: "'Outfit', sans-serif", fontWeight: 900,
                             fontSize: 'clamp(3rem, 15vw, 11rem)',
                             color: '#f4ede6', margin: 0, lineHeight: 0.9, letterSpacing: '-0.03em',
                         }}>
-                            Sanjeevani
-                            <sup style={{ fontSize: '0.2em', color: '#f4ede6', marginLeft: '4px', fontWeight: 400, opacity: 0.7, verticalAlign: 'super' }}>™</sup>
+                            BugSentry
                         </h1>
-                    </div>
-
-                    {/* Horizontal divider row */}
-                    <div className="absolute top-[38%] md:top-[35%] left-[5%] right-[5%] z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-0">
-                        <p style={{
-                            color: '#f4ede6', fontSize: 'clamp(0.55rem, 1.2vw, 0.7rem)', fontWeight: 600,
-                            letterSpacing: '0.18em', textTransform: 'uppercase',
-                            margin: 0, fontFamily: "'Outfit', sans-serif", opacity: 0.82, flexShrink: 0,
-                        }}>PHARMA, REINVENTED.</p>
-
-                        <div className="hidden md:block flex-1 h-[1px]" style={{ backgroundColor: 'rgba(244,237,230,0.25)', margin: '0 18px', minWidth: '20px' }} />
-
-                        <p className="text-left md:text-right" style={{
-                            color: '#f4ede6', fontSize: 'clamp(0.55rem, 1.2vw, 0.7rem)', fontWeight: 500,
-                            letterSpacing: '0.04em', lineHeight: 1.5,
-                            fontFamily: "'Outfit', sans-serif", opacity: 0.75,
-                            margin: 0, maxWidth: '280px', flexShrink: 0,
-                        }}>SMART PHARMACY —<br className="hidden md:inline" /> REIMAGINED FOR THE FUTURE.</p>
+                        <div style={{ marginTop: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                            <h2 style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700, fontSize: 'clamp(1.2rem, 3vw, 2.5rem)', color: '#c8dfa0', margin: '0 0 10px 0' }}>
+                                Engineering Intelligence — Built for Speed
+                            </h2>
+                            <p style={{ fontFamily: "'Outfit', sans-serif", fontSize: 'clamp(0.9rem, 1.5vw, 1.25rem)', color: '#aaaaaa', maxWidth: '600px', margin: 0, lineHeight: 1.5 }}>
+                                Analyze your GitHub repositories, detect failures before they happen, and fix issues instantly with AI.
+                            </p>
+                        </div>
                     </div>
 
                     {/* Scroll hint */}
@@ -98,18 +89,19 @@ export default function LandingHero({ onMenuClick }) {
             </div>
 
             {/* HoverGrid — outside .main so CSS transforms don't skew mouse coords */}
+            <AnimatedDots />
             <HoverGrid />
 
             {/* ── 3D Logo — right side, outside .main transform ── */}
             {/* Radial glow behind the 3D model */}
             <div style={{
-                position: 'absolute', left: '50%', bottom: '-12%',
+                position: 'absolute', left: '50%', top: '45%',
                 transform: 'translateX(-50%)',
-                width: 'min(530px, 80vw)', height: 'min(530px, 80vw)',
+                width: 'min(500px, 75vw)', height: 'min(500px, 75vw)',
                 borderRadius: '50%', zIndex: 14, pointerEvents: 'none',
                 background: 'radial-gradient(ellipse at center, rgba(255,255,255,0.08) 0%, transparent 72%)',
             }} />
-            <Logo3D style={{ top: 'auto', bottom: '-6%' }} />
+            <Logo3D style={{ top: '43%', bottom: 'auto', width: 'min(480px, 75vw)', height: 'min(480px, 75vw)' }} />
         </div>
     );
 }

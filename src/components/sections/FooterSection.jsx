@@ -12,25 +12,25 @@ const NAV_COLS = [
     {
         heading: "Features",
         links: [
-            { name: "WhatsApp Orders", href: "#whatsapp-section" },
-            { name: "Telegram Orders", href: "#whatsapp-section" },
-            { name: "Voice AI", href: "#sms-voice-section" },
-            { name: "Prescription Verification", href: "#delivery-section" },
+            { name: "Repository Analysis", href: "#features-section" },
+            { name: "AI Debugging", href: "#features-section" },
+            { name: "Autonomous PRs", href: "#sms-voice-section" },
+            { name: "Risk Prediction", href: "#delivery-section" },
         ],
     },
     {
         heading: "Platform",
         links: [
-            { name: "Pharmacist Dashboard", href: "#dashboard-section" },
-            { name: "Delivery Module", href: "#delivery-section" },
-            { name: "Analytics", href: "#dashboard-section" },
-            { name: "Inventory", href: "#features-section" },
+            { name: "CEO Intel Dashboard", href: "#dashboard-section" },
+            { name: "Dev Sandbox", href: "#delivery-section" },
+            { name: "Pipeline Metrics", href: "#dashboard-section" },
+            { name: "System Health", href: "#features-section" },
         ],
     },
     {
         heading: "Company",
         links: [
-            { name: "About Us", href: "#" },
+            { name: "About Us", href: "#about-section" },
             { name: "Contact", href: "#footer-section" },
         ],
     },
@@ -116,7 +116,7 @@ export default function FooterSection() {
 
             {/* ── Bottom bar ── */}
             <div className="flex flex-col md:flex-row justify-between items-center gap-3 border-t border-[#2d3d1a]/20 px-6 py-5 md:px-[6vw] relative z-10">
-                <p style={{ ...TEXT, fontSize: "0.65rem", opacity: 0.45, margin: 0 }}>© 2025 Sanjeevani Inc.</p>
+                <p style={{ ...TEXT, fontSize: "0.65rem", opacity: 0.45, margin: 0 }}>© 2026 BugSentry Inc.</p>
                 <p style={{ ...TEXT, fontSize: "0.65rem", opacity: 0.45, margin: 0 }}>TERMS OF USE</p>
             </div>
         </section >

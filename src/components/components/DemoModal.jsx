@@ -4,7 +4,7 @@ import gsap from "gsap";
 export default function DemoModal({ isOpen, onClose }) {
     const [formData, setFormData] = useState({
         name: "",
-        pharmacyName: "",
+        companyName: "",
         phone: "",
         email: "",
         message: ""
@@ -110,7 +110,7 @@ export default function DemoModal({ isOpen, onClose }) {
                 style={{
                     maxWidth: "700px",
                     maxHeight: "calc(100vh - 20px)",
-                    background: "linear-gradient(160deg, rgba(43, 54, 24, 0.95) 0%, rgba(13, 20, 8, 0.98) 100%)",
+                    background: "linear-gradient(160deg, rgba(10, 10, 10, 0.95) 0%, rgba(0, 0, 0, 0.98) 100%)",
                     borderRadius: "24px",
                     border: "1px solid rgba(183, 194, 94, 0.25)",
                     boxShadow: "0 40px 100px rgba(0, 0, 0, 0.6), 0 0 60px rgba(183, 194, 94, 0.08), inset 0 1px 0 rgba(255,255,255,0.05)",
@@ -179,7 +179,7 @@ export default function DemoModal({ isOpen, onClose }) {
                                 justifyContent: "center",
                                 boxShadow: "0 4px 15px rgba(183, 194, 94, 0.3)"
                             }}>
-                                <i className="ri-medicine-bag-line" style={{ color: "#0a1103", fontSize: "1.1rem" }} />
+                                <i className="ri-shield-keyhole-line" style={{ color: "#0a1103", fontSize: "1.1rem" }} />
                             </div>
                             <span style={{
                                 fontFamily: "'Outfit', sans-serif",
@@ -188,7 +188,7 @@ export default function DemoModal({ isOpen, onClose }) {
                                 color: "#b7c25e",
                                 letterSpacing: "0.02em"
                             }}>
-                                Sanjeevani
+                                BugSentry
                             </span>
                         </div>
                     </div>
@@ -215,7 +215,7 @@ export default function DemoModal({ isOpen, onClose }) {
                             fontFamily: "'Outfit', sans-serif",
                             lineHeight: 1.4
                         }}>
-                            See how Sanjeevani can transform your pharmacy. Get a personalized walkthrough with our team.
+                            See how BugSentry can secure your production pipelines. Get a personalized walkthrough with our team.
                         </p>
                     </div>
 
@@ -250,13 +250,13 @@ export default function DemoModal({ isOpen, onClose }) {
                                     textTransform: "uppercase",
                                     marginBottom: "6px",
                                     fontFamily: "'Outfit', sans-serif"
-                                }}>Pharmacy Name</label>
+                                }}>Company Name</label>
                                 <input
                                     type="text"
                                     className="demo-input"
                                     required
-                                    value={formData.pharmacyName}
-                                    onChange={(e) => setFormData({ ...formData, pharmacyName: e.target.value })}
+                                    value={formData.companyName}
+                                    onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
                                 />
                             </div>
                         </div>
@@ -357,7 +357,7 @@ export default function DemoModal({ isOpen, onClose }) {
                         alignItems: "center",
                         justifyContent: "center",
                         padding: "32px",
-                        background: "linear-gradient(160deg, rgba(43, 54, 24, 0.98) 0%, rgba(13, 20, 8, 0.99) 100%)"
+                        background: "linear-gradient(160deg, rgba(10, 10, 10, 0.98) 0%, rgba(0, 0, 0, 0.99) 100%)"
                     }}>
                         <div style={{
                             width: "90px",
