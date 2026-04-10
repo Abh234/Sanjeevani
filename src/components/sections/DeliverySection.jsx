@@ -201,15 +201,7 @@ export default function DeliverySection() {
                          onMouseLeave={e => {
                              e.currentTarget.style.transform = "rotateY(-12deg) rotateX(4deg) scale(1.02) translateY(0)";
                          }}>
-                        <div style={trafficLightsStyle}>
-                            <div style={lightStyle("#ff5f56")} />
-                            <div style={lightStyle("#ffbd2e")} />
-                            <div style={lightStyle("#27c93f")} />
-                            <div style={{ marginLeft: "14px", color: "rgba(255,255,255,0.3)", fontSize: "0.7rem", fontFamily: "monospace", display: "flex", alignItems: "center", letterSpacing: "0.05em" }}>
-                                console.bugsentry.io
-                            </div>
-                        </div>
-                        <div style={{ position: "relative", background: "#050505" }}>
+                        <div style={{ position: "relative" }}>
                             <img 
                                 src={dashboardMockup} 
                                 alt="BugSentry Dashboard Mockup" 
@@ -217,8 +209,8 @@ export default function DeliverySection() {
                                     width: "100%", 
                                     height: "auto", 
                                     display: "block",
-                                    opacity: 0.9,
-                                    filter: "contrast(1.1) brightness(1.1)"
+                                    opacity: 1,
+                                    filter: "contrast(1.05) brightness(1.05)"
                                 }}
                             />
                             {/* Interactive Glow overlay */}
