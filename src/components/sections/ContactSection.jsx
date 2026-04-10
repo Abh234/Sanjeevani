@@ -37,9 +37,9 @@ export default function ContactSection() {
                 </div>
 
                 <div className="contact-anim mt-16">
-                    <button className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-bold text-lg shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-1 transition duration-300">
-                        Schedule a Demo
-                    </button>
+                    <a href="https://bugsentry-console.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-bold text-lg shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-1 transition duration-300">
+                        View Demo
+                    </a>
                 </div>
             </div>
         </div>
