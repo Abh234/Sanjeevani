@@ -1,5 +1,5 @@
 import React from "react";
-import dashboardMockup from "../../assets/image/bugsentry_dashboard_mockup.png";
+import dashboardMockup from "../../assets/image/bugsentry_dashboard_mockup_trimmed.png";
 
 const browserWindowStyle = {
     width: "100%",
@@ -190,46 +190,24 @@ export default function DeliverySection() {
                     justifyContent: "center",
                     perspective: "2000px"
                 }}>
-                    <div className="browser-window" 
-                         style={{
-                             ...browserWindowStyle,
-                             transform: "rotateY(-12deg) rotateX(4deg) scale(1.02)",
-                         }}
-                         onMouseEnter={e => {
-                             e.currentTarget.style.transform = "rotateY(0deg) rotateX(0deg) scale(1.1) translateY(-20px)";
-                         }}
-                         onMouseLeave={e => {
-                             e.currentTarget.style.transform = "rotateY(-12deg) rotateX(4deg) scale(1.02) translateY(0)";
-                         }}>
-                        <div style={trafficLightsStyle}>
-                            <div style={lightStyle("#ff5f56")} />
-                            <div style={lightStyle("#ffbd2e")} />
-                            <div style={lightStyle("#27c93f")} />
-                            <div style={{ marginLeft: "14px", color: "rgba(255,255,255,0.3)", fontSize: "0.7rem", fontFamily: "monospace", display: "flex", alignItems: "center", letterSpacing: "0.05em" }}>
-                                console.bugsentry.io
-                            </div>
-                        </div>
-                        <div style={{ position: "relative", background: "#050505" }}>
-                            <img 
-                                src={dashboardMockup} 
-                                alt="BugSentry Dashboard Mockup" 
-                                style={{ 
-                                    width: "100%", 
-                                    height: "auto", 
-                                    display: "block",
-                                    opacity: 0.9,
-                                    filter: "contrast(1.1) brightness(1.1)"
-                                }}
-                            />
-                            {/* Interactive Glow overlay */}
-                            <div style={{
-                                position: "absolute",
-                                top: 0, left: 0, right: 0, bottom: 0,
-                                background: "linear-gradient(135deg, rgba(183,194,94,0.05) 0%, transparent 50%)",
-                                pointerEvents: "none"
-                            }} />
-                        </div>
-                    </div>
+                    <img 
+                        src={dashboardMockup} 
+                        alt="BugSentry Dashboard Mockup" 
+                        style={{ 
+                            width: "100%", 
+                            height: "auto", 
+                            display: "block",
+                            transform: "rotateY(-12deg) rotateX(4deg) scale(1.02)",
+                            transition: "transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1)",
+                            filter: "drop-shadow(0 40px 100px rgba(0,0,0,0.8))"
+                        }}
+                        onMouseEnter={e => {
+                            e.currentTarget.style.transform = "rotateY(0deg) rotateX(0deg) scale(1.1) translateY(-20px)";
+                        }}
+                        onMouseLeave={e => {
+                            e.currentTarget.style.transform = "rotateY(-12deg) rotateX(4deg) scale(1.02) translateY(0)";
+                        }}
+                    />
                 </div>
 
             </div>
