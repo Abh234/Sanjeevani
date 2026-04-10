@@ -1,99 +1,233 @@
 import React from "react";
-import devMobileUi from "../../assets/image/dev_mobile_ui.png";
-import managerMobileUi from "../../assets/image/feature_devops_ui.png";
+import dashboardMockup from "../../assets/image/bugsentry_dashboard_mockup.png";
 
-const phoneMockupStyle = {
-    width: "320px",
-    height: "650px",
-    border: "10px solid #2d3d1a",
-    borderRadius: "44px",
-    background: "#0c1405",
-    position: "relative",
+const browserWindowStyle = {
+    width: "100%",
+    maxWidth: "100%",
+    background: "#0a0a0a",
+    borderRadius: "12px",
     overflow: "hidden",
-    boxShadow: "0 40px 80px rgba(0,0,0,0.5), inset 0 0 0 2px rgba(255,255,255,0.05)",
-    flexShrink: 0
+    boxShadow: "0 40px 100px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.08)",
+    position: "relative",
+    transition: "transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1)",
+    zIndex: 2,
 };
 
-const notchStyle = {
-    position: "absolute",
-    top: 0,
-    left: "50%",
-    transform: "translateX(-50%)",
-    width: "110px",
-    height: "26px",
-    background: "#2d3d1a",
-    borderBottomLeftRadius: "14px",
-    borderBottomRightRadius: "14px",
-    zIndex: 20
+const trafficLightsStyle = {
+    display: "flex",
+    gap: "8px",
+    padding: "12px 16px",
+    background: "rgba(255,255,255,0.03)",
+    borderBottom: "1px solid rgba(255,255,255,0.1)",
 };
+
+const lightStyle = (color) => ({
+    width: "10px",
+    height: "10px",
+    borderRadius: "50%",
+    background: color,
+    opacity: 0.8
+});
 
 export default function DeliverySection() {
     return (
         <section id="delivery-section" style={{
             minHeight: "100vh",
             background: "linear-gradient(180deg, #0a0a0a 0%, #000000 100%)",
-            padding: "100px 6vw 120px",
+            padding: "120px 6vw",
             position: "relative",
             display: "flex",
-            flexDirection: "column",
             alignItems: "center",
+            justifyContent: "center",
             overflow: "hidden"
         }}>
-            {/* Header */}
-            <div className="delivery-anim" style={{ textAlign: "center", marginBottom: "60px", maxWidth: "800px" }}>
-                <p style={{ color: "#b7c25e", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.24em", textTransform: "uppercase", fontFamily: "'Outfit', sans-serif", margin: "0 0 16px" }}>
-                    Role-Based Views
-                </p>
-                <h2 style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 900, fontSize: "clamp(2rem, 5vw, 4rem)", color: "#f4ede6", margin: "0 0 24px", lineHeight: 1.05 }}>
-                    Developer &amp; Manager <span style={{ fontFamily: "Georgia, serif", fontStyle: "italic", fontWeight: 400, color: "#c8dfa0", display: "inline-block" }}>in perfect sync.</span>
-                </h2>
-                <p style={{ color: "#f4ede6", opacity: 0.65, fontSize: "1.05rem", lineHeight: 1.6, fontFamily: "'Outfit', sans-serif", margin: "0 auto" }}>
-                    Different views for different roles. Developers get granular code insights and instant fix suggestions. Managers get sprint impact, team velocity metrics, and deployment risk trajectories.
-                </p>
-            </div>
+            {/* Background Decor */}
+            <div style={{
+                position: "absolute",
+                top: "40%",
+                right: "-10%",
+                width: "60vw",
+                height: "60vw",
+                background: "radial-gradient(circle, rgba(183,194,94,0.05) 0%, transparent 70%)",
+                pointerEvents: "none",
+                zIndex: 0
+            }} />
 
-            {/* Mobile App Mockups Container */}
-            <div className="delivery-anim" style={{ display: "flex", gap: "6vw", flexWrap: "wrap", justifyContent: "center", width: "100%", alignItems: "center" }}>
+            <div style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+                gap: "80px",
+                width: "100%",
+                maxWidth: "1400px",
+                flexWrap: "wrap",
+                position: "relative",
+                zIndex: 1
+            }}>
+                
+                {/* ── Left Content ── */}
+                <div className="delivery-anim" style={{ 
+                    flex: "1 1 450px",
+                    textAlign: "left"
+                }}>
+                    <div style={{ 
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: "10px",
+                        padding: "6px 14px",
+                        background: "rgba(183,194,94,0.08)",
+                        border: "1px solid rgba(183,194,94,0.15)",
+                        borderRadius: "99px",
+                        marginBottom: "24px"
+                    }}>
+                        <i className="ri-shield-check-line" style={{ color: "#b7c25e", fontSize: "0.9rem" }} />
+                        <span style={{ 
+                            color: "#b7c25e", 
+                            fontSize: "0.68rem", 
+                            fontWeight: 700, 
+                            letterSpacing: "0.15em", 
+                            textTransform: "uppercase", 
+                            fontFamily: "'Outfit', sans-serif" 
+                        }}>Role-Based Intelligence</span>
+                    </div>
 
-                {/* ── Pharmacist App Mockup ── */}
-                <div style={{ ...phoneMockupStyle, transform: "rotate(-2deg) translateY(-10px)", transition: "transform 0.4s ease" }}
-                    onMouseEnter={e => e.currentTarget.style.transform = "rotate(0deg) translateY(-20px)"}
-                    onMouseLeave={e => e.currentTarget.style.transform = "rotate(-2deg) translateY(-10px)"}>
-                    <div style={{ padding: "0", height: "100%", width: "100%", position: "relative" }}>
-                        <div style={notchStyle} />
-                        <img 
-                            src={devMobileUi} 
-                            alt="Developer Sandbox UI" 
-                            style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                        />
-                        
-                        {/* Overlay Label for clarity */}
-                        <div style={{ position: "absolute", top: "44px", left: "20px", display: "flex", flexDirection: "column", gap: "2px" }}>
-                            <h3 style={{ color: "#f4ede6", fontSize: "1.2rem", fontWeight: 900, fontFamily: "'Outfit', sans-serif", margin: 0, textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}>BugSentry</h3>
-                            <p style={{ color: "#b7c25e", fontSize: "0.75rem", margin: 0, fontFamily: "'Outfit', sans-serif", fontWeight: 700, textShadow: "0 2px 8px rgba(0,0,0,0.8)" }}>Developer Sandbox</p>
+                    <h2 style={{ 
+                        fontFamily: "'Outfit', sans-serif", 
+                        fontWeight: 900, 
+                        fontSize: "clamp(2.5rem, 4.5vw, 4rem)", 
+                        color: "#f4ede6", 
+                        margin: "0 0 24px", 
+                        lineHeight: 1.05,
+                        letterSpacing: "-0.02em"
+                    }}>
+                        Developer &amp; Manager <br/>
+                        <span style={{ fontFamily: "Georgia, serif", fontStyle: "italic", fontWeight: 400, color: "#c8dfa0" }}>in perfect sync.</span>
+                    </h2>
+
+                    <p style={{ 
+                        color: "#f4ede6", 
+                        opacity: 0.65, 
+                        fontSize: "1.05rem", 
+                        lineHeight: 1.7, 
+                        fontFamily: "'Outfit', sans-serif", 
+                        maxWidth: "520px",
+                        margin: "0 0 40px"
+                    }}>
+                        Different views for different roles. BugSentry provides a unified interface that balances deep engineering insights with executive-level visibility.
+                    </p>
+
+                    <div style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "24px",
+                        marginBottom: "48px"
+                    }}>
+                        <div style={{ display: "flex", gap: "16px" }}>
+                            <div style={{ width: "36px", height: "36px", borderRadius: "10px", background: "rgba(183,194,94,0.12)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                                <i className="ri-code-s-slash-line" style={{ color: "#b7c25e", fontSize: "1.1rem" }} />
+                            </div>
+                            <div>
+                                <h4 style={{ color: "#f4ede6", fontSize: "1.05rem", fontWeight: 700, marginBottom: "4px", fontFamily: "'Outfit', sans-serif" }}>For Developers</h4>
+                                <p style={{ color: "#f4ede6", opacity: 0.45, fontSize: "0.88rem", lineHeight: 1.5, fontFamily: "'Outfit', sans-serif", maxWidth: "400px" }}>
+                                    Granular code insights, instant fix suggestions, and automated PRs.
+                                </p>
+                            </div>
+                        </div>
+                        <div style={{ display: "flex", gap: "16px" }}>
+                            <div style={{ width: "36px", height: "36px", borderRadius: "10px", background: "rgba(200,223,160,0.12)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                                <i className="ri-presentation-line" style={{ color: "#c8dfa0", fontSize: "1.1rem" }} />
+                            </div>
+                            <div>
+                                <h4 style={{ color: "#f4ede6", fontSize: "1.05rem", fontWeight: 700, marginBottom: "4px", fontFamily: "'Outfit', sans-serif" }}>For Managers</h4>
+                                <p style={{ color: "#f4ede6", opacity: 0.45, fontSize: "0.88rem", lineHeight: 1.5, fontFamily: "'Outfit', sans-serif", maxWidth: "400px" }}>
+                                    Sprint impact analysis, team velocity, and risk forecasting.
+                                </p>
+                            </div>
                         </div>
                     </div>
+
+                    <a 
+                        href="https://bugsentry-console.vercel.app/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        style={{
+                            display: "inline-flex",
+                            alignItems: "center",
+                            gap: "12px",
+                            padding: "18px 36px",
+                            background: "#b7c25e",
+                            color: "#0a0a0a",
+                            borderRadius: "14px",
+                            fontSize: "0.95rem",
+                            fontWeight: 800,
+                            textDecoration: "none",
+                            fontFamily: "'Outfit', sans-serif",
+                            textTransform: "uppercase",
+                            letterSpacing: "0.08em",
+                            transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+                            boxShadow: "0 10px 40px rgba(183,194,94,0.2)"
+                        }}
+                        onMouseEnter={e => {
+                            e.currentTarget.style.transform = "translateY(-4px)";
+                            e.currentTarget.style.boxShadow = "0 15px 50px rgba(183,194,94,0.4)";
+                            e.currentTarget.style.background = "#c8dfa0";
+                        }}
+                        onMouseLeave={e => {
+                            e.currentTarget.style.transform = "translateY(0)";
+                            e.currentTarget.style.boxShadow = "0 10px 40px rgba(183,194,94,0.2)";
+                            e.currentTarget.style.background = "#b7c25e";
+                        }}
+                    >
+                        View Live Demo
+                        <i className="ri-external-link-line" />
+                    </a>
                 </div>
 
-                {/* ── Delivery Rider App Mockup ── */}
-                <div style={{ ...phoneMockupStyle, border: "10px solid #f4ede6", background: "#f4ede6", transform: "rotate(3deg) translateY(20px)", transition: "transform 0.4s ease" }}
-                    onMouseEnter={e => e.currentTarget.style.transform = "rotate(0deg) translateY(0px)"}
-                    onMouseLeave={e => e.currentTarget.style.transform = "rotate(3deg) translateY(20px)"}>
-                    <div style={{ padding: "0", height: "100%", width: "100%", position: "relative" }}>
-                        <div style={{ ...notchStyle, background: "#0a0a0a" }} />
-                        <img 
-                            src={managerMobileUi} 
-                            alt="Manager View UI" 
-                            style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                        />
-                        
-                        {/* Overlay Label for clarity */}
-                        <div style={{ position: "absolute", top: "44px", left: "20px", display: "flex", flexDirection: "column", gap: "2px" }}>
-                            <h3 style={{ color: "#1a2a0a", fontSize: "1.2rem", fontWeight: 900, fontFamily: "'Outfit', sans-serif", margin: 0, textShadow: "0 2px 10px rgba(255,255,255,0.4)" }}>Manager View</h3>
-                            <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-                                <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#7dcf50", boxShadow: "0 0 8px #7dcf50" }} />
-                                <p style={{ color: "#4d6628", fontSize: "0.75rem", margin: 0, fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>Sprint Active</p>
+                {/* ── Right Dashboard Showcase ── */}
+                <div className="delivery-anim" style={{ 
+                    flex: "1 1 550px",
+                    display: "flex",
+                    justifyContent: "center",
+                    perspective: "2000px"
+                }}>
+                    <div className="browser-window" 
+                         style={{
+                             ...browserWindowStyle,
+                             transform: "rotateY(-12deg) rotateX(4deg) scale(1.02)",
+                         }}
+                         onMouseEnter={e => {
+                             e.currentTarget.style.transform = "rotateY(0deg) rotateX(0deg) scale(1.1) translateY(-20px)";
+                         }}
+                         onMouseLeave={e => {
+                             e.currentTarget.style.transform = "rotateY(-12deg) rotateX(4deg) scale(1.02) translateY(0)";
+                         }}>
+                        <div style={trafficLightsStyle}>
+                            <div style={lightStyle("#ff5f56")} />
+                            <div style={lightStyle("#ffbd2e")} />
+                            <div style={lightStyle("#27c93f")} />
+                            <div style={{ marginLeft: "14px", color: "rgba(255,255,255,0.3)", fontSize: "0.7rem", fontFamily: "monospace", display: "flex", alignItems: "center", letterSpacing: "0.05em" }}>
+                                console.bugsentry.io
                             </div>
+                        </div>
+                        <div style={{ position: "relative", background: "#050505" }}>
+                            <img 
+                                src={dashboardMockup} 
+                                alt="BugSentry Dashboard Mockup" 
+                                style={{ 
+                                    width: "100%", 
+                                    height: "auto", 
+                                    display: "block",
+                                    opacity: 0.9,
+                                    filter: "contrast(1.1) brightness(1.1)"
+                                }}
+                            />
+                            {/* Interactive Glow overlay */}
+                            <div style={{
+                                position: "absolute",
+                                top: 0, left: 0, right: 0, bottom: 0,
+                                background: "linear-gradient(135deg, rgba(183,194,94,0.05) 0%, transparent 50%)",
+                                pointerEvents: "none"
+                            }} />
                         </div>
                     </div>
                 </div>

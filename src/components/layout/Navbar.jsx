@@ -51,13 +51,14 @@ export default function Navbar({ onMenuClick, onBookDemo }) {
 
             <div className="hidden md:flex items-center gap-[22px]">
                 <a href="#integration-section" className="nav-link">CONNECT GITHUB</a>
-                <button
-                    onClick={onBookDemo}
+                <a
+                    href="https://bugsentry-console.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="nav-link"
-                    style={{ background: 'none', border: 'none', cursor: 'pointer' }}
                 >
                     VIEW DEMO
-                </button>
+                </a>
             </div>
         </div>
     );
